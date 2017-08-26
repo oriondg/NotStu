@@ -69,8 +69,8 @@ bot.on('message', (user, userID, channelID, message, evt)  => {
 		//logger.info(util.inspect(channelID, {showHidden: false, depth: 1}));
 		var found = false;
 		for ( var channelName in bot.channels ) {
-			//logger.info("looking at: " + channelName);
-			if ( channelName == chatChannelName ) chatChannel = bot.channels[channelName];
+			logger.info("looking at: " + bot.channels[channelName].name );
+			if ( bot.channels[channelName].name == chatChannelName ) chatChannel = bot.channels[channelName];
 			var channel = bot.channels[channelName];
 			if ( !found ) {
 				//logger.info(util.inspect(channel, {showHidden: false, depth: 3 }));
