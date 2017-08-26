@@ -6,6 +6,7 @@
   "author": "Stuart 'oriondg' Marchant",
   "dependencies": {
     "discord.io": "^2.5.2",
+    "pcm-volume": "^1.0.0",
     "superagent": "^3.6.0",
     "url": "^0.11.0",
     "winston": "^2.3.1",

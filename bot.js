@@ -33,6 +33,8 @@ var playQueue = [];
 var apikey = youtube_apikey.apikey;
 var currentUserID = false;
 var dmName = 'Misterchainsaw';
+var chatChannelName = "rabbleing";
+var chatChannel = false;
 
 bot.on('warn', (m) => logger.info('[warn]', m));
 bot.on('debug', (m) => logger.info('[debug]', m));
@@ -59,58 +61,62 @@ bot.on('message', (user, userID, channelID, message, evt)  => {
 	if ( m.content.startsWith(`${botMention} i`)) {		
 		if ( !checkCommand(m, 'init')) return;
 		if ( boundChannel) return;
-		logger.info("Initializing...");
+		//logger.info("Initializing...");
 		var userChannel = m.author.voiceChannel;
 		var channelToJoin = spliceArguments(m.content)[1];
 		//logger.info(util.inspect(bot.channels, {showHidden: false, depth: 3}));
 		
 		//logger.info(util.inspect(channelID, {showHidden: false, depth: 1}));
+		var found = false;
 		for ( var channelName in bot.channels ) {
-			logger.info("looking at: " + channelName);
-			
+			//logger.info("looking at: " + channelName);
+			if ( channelName == chatChannelName ) chatChannel = bot.channels[channelName];
 			var channel = bot.channels[channelName];
-			//logger.info(util.inspect(channel, {showHidden: false, depth: 3 }));
-			for ( var memberName in channel.members ) {
-				var member = channel.members[memberName];
-				logger.info('member: ' + util.inspect(member, {showHidden: false, depth: 1} ));
-				if ( member.user_id == userID ) {
-					boundChannel = channel;
-					bot.sendMessage({
-						to : userID,
-						message :  `Binding to text channel <#${boundChannel.id}> and voice channel **${channel.name}** \`(${channel.id})\``
-						});
-					bot.joinVoiceChannel(channel.id);
-					break;
-				} else {
-					bot.sendMessage({
-						to : userID, 
-						message : "Couldn't join voice channel!"
-					});
+			if ( !found ) {
+				//logger.info(util.inspect(channel, {showHidden: false, depth: 3 }));
+				for ( var memberName in channel.members ) {
+					var member = channel.members[memberName];
+					//logger.info('member: ' + util.inspect(member, {showHidden: false, depth: 1} ));
+					if ( member.user_id == userID ) {
+						boundChannel = channel;
+						fancyReply(m, `Binding to text channel <#${boundChannel.id}> and voice channel **${channel.name}** \`(${channel.id})\``);
+						bot.joinVoiceChannel(channel.id);
+						found = true;
+					} 
 				}
 			}
 		}	
+		if ( !found ) {
+			fancyReply(m, "Couldn't join voice channel!");
+		}
 	}
 	if ( m.content.startsWith(`${botMention} d`)) {
 		if ( !checkCommand(m, 'destroy')) return;
 		if ( !boundChannel) return;
-		bot.sendMessage({ to: userID, message: `Unbinding from <#${boundChannel.id}> and destroying voice connection`});
+		fancyReply(m, `Unbinding from <#${boundChannel.id}> and destroying voice connection`);
 		playQueue = [];
 		bot.leaveVoiceChannel();
 		boundChannel = false;
 		currentStream = false;
 		currentVideo = false;
 	}
+	if ( m.content.startsWith(`${botMention} s`)) {
+		if ( !checkCommand(m, 'stop')) return;
+		if ( !boundChannel) return;
+		if ( !currentVideo) return;
+		playStopped();
+	}
 	if ( m.content.startsWith(`${botMention} q`)) {
 		if ( !checkCommand(m, 'query')) return;
 		if ( !apikey ) {
-			bot.reply(m, 'apikey not set up.');
+			fancyReply(m, 'apikey not set up.');
 			return;
 		}
 		
 		var args = spliceArguments(m.content)[1];
 		
 		if (!args) {
-			bot.reply(m, 'You need to specify a search parameter.');
+			fancyReply(m, 'You need to specify a search parameter.');
 			return;
 		}
 		
@@ -121,7 +127,7 @@ bot.on('message', (user, userID, channelID, message, evt)  => {
 			if (!error && response.statusCode == 200) {
 				var body = response.body;
 				if ( body.items.length == 0 ){
-					bot.sendMessage({ to: userID, message: 'Your query gave 0 results.'});
+					fancyReply(m, 'Your query gave 0 results.');
 					return;
 				}
 				
@@ -133,11 +139,11 @@ bot.on('message', (user, userID, channelID, message, evt)  => {
 					}
 				}
 				
-				bot.sendMessage({to: userID, message: 'No video has been found!'});
+				fancyReply(m, 'No video has been found!');
 			} else {
 				logger.info(util.inspect(response, {showHidden: false, depth: 3 }));
 				logger.info(util.inspect(error, {showHidden: false, depth: 3 }));
-				bot.sendMessage({to: userID, message: 'Error while searching.'});
+				fancyReply(m, 'Error while searching.');
 				return;
 			}
 		});
@@ -187,7 +193,7 @@ function getInfoAndQueue(vid, m, suppress) {
 function parseVidAndQueue(vid, m, suppress) {
 	vid = resolve(vid, m);
 	if ( !vid) {
-		client.sendMessage({to: userID, message : "You need to specify a video!"});
+		fancyReply(m, "You need to specify a video!");
 	}
 	
 	getInfoAndQueue(vid, m, suppress);
@@ -220,8 +226,8 @@ function handleYTError(err) {
 function playStopped() {
 	if ( bot.voiceConnection ) bot.voiceConnection.stopPlaying();
 	
-	boundChannel.sendMessage(`Finished playing **${currentVideo.title}**`);
-	bot.setStatus('online', null);
+	bot.sendMessage({to: currentUserID, message : `Finished playing **${currentVideo.title}**`});
+	//bot.setStatus('online', null);
 	lastVideo = currentVideo;
 	currentVideo = false;
 	nextInQueue();
@@ -244,11 +250,14 @@ function play(video) {
 				logger.error("Error setting up context.");
 				logger.error(error);
 			} else {
-				//setWorking(true, "Video over.");
-				//bot.setPresence( { game: video.title } );
-				//stream.pipe(currentStream, {end: false });
+				
 				currentStream.pipe(stream, {end: false});
+				
+				
 				bot.sendMessage({to: currentUserID, message :`Playing ${video.prettyPrint()}`});
+				stream.once('done', () => {
+					playStopped();
+				});
 				//bot.setStatus('online', video.title);
 			}
 		});
@@ -280,7 +289,11 @@ function fancyReply(m, message) {
 	if ( shouldStockpile ) {
 		stockpile += message + '\n';
 	} else {
-		bot.sendMessage({ to: m.author.id, message: message});
+		if ( m == undefined || chatChannel ) {
+			bot.sendMessage({ to: chatChannel.id, message: message});
+		} else { 
+			bot.sendMessage({ to: m.author.id, message: message});
+		}
 	}
 }
 

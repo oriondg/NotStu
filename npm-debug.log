@@ -1,0 +1,2422 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/nodejs', '/usr/bin/npm', 'install', 'lame', '--save' ]
+2 info using npm@1.4.21
+3 info using node@v4.8.4
+4 warn package.json NotStu@0.0.1 No repository field.
+5 warn package.json NotStu@0.0.1 No license field.
+6 warn package.json pcm-volume@1.0.0 No license field.
+7 warn package.json url@0.11.0 url is also the name of a node core module.
+8 verbose readDependencies using package.json deps
+9 verbose cache add [ 'lame', null ]
+10 verbose cache add name=undefined spec="lame" args=["lame",null]
+11 verbose parsed url Url {
+11 verbose parsed url   protocol: null,
+11 verbose parsed url   slashes: null,
+11 verbose parsed url   auth: null,
+11 verbose parsed url   host: null,
+11 verbose parsed url   port: null,
+11 verbose parsed url   hostname: null,
+11 verbose parsed url   hash: null,
+11 verbose parsed url   search: null,
+11 verbose parsed url   query: null,
+11 verbose parsed url   pathname: 'lame',
+11 verbose parsed url   path: 'lame',
+11 verbose parsed url   href: 'lame' }
+12 silly lockFile cf55620b-lame lame
+13 verbose lock lame /root/.npm/cf55620b-lame.lock
+14 silly lockFile cf55620b-lame lame
+15 silly lockFile cf55620b-lame lame
+16 verbose addNamed [ 'lame', '' ]
+17 verbose addNamed [ null, '*' ]
+18 silly lockFile 361b3966-lame lame@
+19 verbose lock lame@ /root/.npm/361b3966-lame.lock
+20 silly addNameRange { name: 'lame', range: '*', hasData: false }
+21 verbose request where is /lame
+22 verbose request registry https://registry.npmjs.org/
+23 verbose request id 2124b1c4ba66ca36
+24 verbose url raw /lame
+25 verbose url resolving [ 'https://registry.npmjs.org/', './lame' ]
+26 verbose url resolved https://registry.npmjs.org/lame
+27 verbose request where is https://registry.npmjs.org/lame
+28 info trying registry request attempt 1 at 12:08:00 AM
+29 verbose etag W/"5949c22a-4ef2"
+30 http GET https://registry.npmjs.org/lame
+31 http 304 https://registry.npmjs.org/lame
+32 silly registry.get cb [ 304,
+32 silly registry.get   { date: 'Sat, 26 Aug 2017 04:08:07 GMT',
+32 silly registry.get     via: '1.1 varnish',
+32 silly registry.get     'cache-control': 'max-age=300',
+32 silly registry.get     etag: 'W/"5949c22a-4ef2"',
+32 silly registry.get     age: '61',
+32 silly registry.get     connection: 'close',
+32 silly registry.get     'x-served-by': 'cache-jfk8134-JFK',
+32 silly registry.get     'x-cache': 'HIT',
+32 silly registry.get     'x-cache-hits': '1',
+32 silly registry.get     'x-timer': 'S1503720487.373566,VS0,VE1',
+32 silly registry.get     vary: 'Accept-Encoding, Accept' } ]
+33 verbose etag https://registry.npmjs.org/lame from cache
+34 silly addNameRange number 2 { name: 'lame', range: '*', hasData: true }
+35 silly addNameRange versions [ 'lame',
+35 silly addNameRange   [ '0.0.1',
+35 silly addNameRange     '0.0.3',
+35 silly addNameRange     '0.0.4',
+35 silly addNameRange     '1.0.0',
+35 silly addNameRange     '1.0.1',
+35 silly addNameRange     '1.0.2',
+35 silly addNameRange     '1.0.3',
+35 silly addNameRange     '1.1.0',
+35 silly addNameRange     '1.1.1',
+35 silly addNameRange     '1.1.2',
+35 silly addNameRange     '1.2.0',
+35 silly addNameRange     '1.2.1',
+35 silly addNameRange     '1.2.2',
+35 silly addNameRange     '1.2.3',
+35 silly addNameRange     '1.2.4' ] ]
+36 verbose addNamed [ 'lame', '1.2.4' ]
+37 verbose addNamed [ '1.2.4', '1.2.4' ]
+38 silly lockFile 62e8a861-lame-1-2-4 lame@1.2.4
+39 verbose lock lame@1.2.4 /root/.npm/62e8a861-lame-1-2-4.lock
+40 silly lockFile 62e8a861-lame-1-2-4 lame@1.2.4
+41 silly lockFile 62e8a861-lame-1-2-4 lame@1.2.4
+42 silly lockFile 361b3966-lame lame@
+43 silly lockFile 361b3966-lame lame@
+44 silly resolved [ { name: 'lame',
+44 silly resolved     description: 'NodeJS native bindings to libmp3lame & libmpg123.',
+44 silly resolved     keywords: [ 'lame', 'mpg123', 'mp3', 'mpeg', 'mpg', 'encode', 'decode' ],
+44 silly resolved     version: '1.2.4',
+44 silly resolved     author:
+44 silly resolved      { name: 'Nathan Rajlich',
+44 silly resolved        email: 'nathan@tootallnate.net',
+44 silly resolved        url: 'http://tootallnate.net' },
+44 silly resolved     license: 'MIT',
+44 silly resolved     repository:
+44 silly resolved      { type: 'git',
+44 silly resolved        url: 'git://github.com/TooTallNate/node-lame.git' },
+44 silly resolved     main: './index.js',
+44 silly resolved     dependencies:
+44 silly resolved      { bindings: '^1.2.1',
+44 silly resolved        debug: '^2.2.0',
+44 silly resolved        'readable-stream': '^1.0.34',
+44 silly resolved        nan: '^2.3.5' },
+44 silly resolved     devDependencies: { mocha: '^2.4.5' },
+44 silly resolved     scripts: { test: 'mocha --reporter spec', install: 'node-gyp rebuild' },
+44 silly resolved     gypfile: true,
+44 silly resolved     gitHead: '892d9097d01197d28946f5dd1fee1c7bf6bae018',
+44 silly resolved     bugs: { url: 'https://github.com/TooTallNate/node-lame/issues' },
+44 silly resolved     homepage: 'https://github.com/TooTallNate/node-lame#readme',
+44 silly resolved     _id: 'lame@1.2.4',
+44 silly resolved     _shasum: '546801514e2de8ca0c89eef222880c8dc6712485',
+44 silly resolved     _from: 'lame@',
+44 silly resolved     _npmVersion: '3.8.9',
+44 silly resolved     _nodeVersion: '6.2.0',
+44 silly resolved     _npmUser: { name: 'linusu', email: 'linus@folkdatorn.se' },
+44 silly resolved     dist:
+44 silly resolved      { shasum: '546801514e2de8ca0c89eef222880c8dc6712485',
+44 silly resolved        tarball: 'https://registry.npmjs.org/lame/-/lame-1.2.4.tgz' },
+44 silly resolved     maintainers: [ [Object], [Object], [Object] ],
+44 silly resolved     _npmOperationalInternal:
+44 silly resolved      { host: 'packages-12-west.internal.npmjs.com',
+44 silly resolved        tmp: 'tmp/lame-1.2.4.tgz_1467004820762_0.4870841265656054' },
+44 silly resolved     directories: {},
+44 silly resolved     _resolved: 'https://registry.npmjs.org/lame/-/lame-1.2.4.tgz',
+44 silly resolved     readme: 'ERROR: No README data found!' } ]
+45 info install lame@1.2.4 into /root/NotStu
+46 info installOne lame@1.2.4
+47 verbose node_modules/lame unbuild
+48 verbose tar unpack /root/.npm/lame/1.2.4/package.tgz
+49 silly lockFile 039977b8-ar-root-NotStu-node-modules-lame tar:///root/NotStu/node_modules/lame
+50 verbose lock tar:///root/NotStu/node_modules/lame /root/.npm/039977b8-ar-root-NotStu-node-modules-lame.lock
+51 silly lockFile 9c7474e1--root-npm-lame-1-2-4-package-tgz tar:///root/.npm/lame/1.2.4/package.tgz
+52 verbose lock tar:///root/.npm/lame/1.2.4/package.tgz /root/.npm/9c7474e1--root-npm-lame-1-2-4-package-tgz.lock
+53 silly gunzTarPerm modes [ '755', '644' ]
+54 silly gunzTarPerm extractEntry package.json
+55 silly gunzTarPerm extractEntry .npmignore
+56 silly gunzTarPerm extractEntry README.md
+57 silly gunzTarPerm extractEntry LICENSE
+58 silly gunzTarPerm extractEntry index.js
+59 silly gunzTarPerm extractEntry deps/lame/README
+60 silly gunzTarPerm extractEntry deps/lame/LICENSE
+61 silly gunzTarPerm extractEntry deps/lame/config.sub
+62 silly gunzTarPerm extractEntry deps/lame/ChangeLog
+63 silly gunzTarPerm extractEntry deps/lame/DEFINES
+64 silly gunzTarPerm extractEntry deps/lame/Dll/README
+65 silly gunzTarPerm extractEntry deps/lame/Dll/BladeMP3EncDLL.c
+66 silly gunzTarPerm extractEntry deps/lame/Dll/BladeMP3EncDLL.def
+67 silly gunzTarPerm extractEntry deps/lame/Dll/BladeMP3EncDLL.h
+68 silly gunzTarPerm extractEntry deps/lame/Dll/Example.cpp
+69 silly gunzTarPerm extractEntry deps/lame/Dll/LameDLLInterface.htm
+70 silly gunzTarPerm extractEntry deps/lame/Dll/MP3export.pas
+71 silly gunzTarPerm extractEntry deps/lame/Dll/Makefile.am
+72 silly gunzTarPerm extractEntry deps/lame/Dll/Makefile.in
+73 silly gunzTarPerm extractEntry deps/lame/Dll/Makefile.mingw32
+74 silly gunzTarPerm extractEntry deps/lame/HACKING
+75 silly gunzTarPerm extractEntry deps/lame/INSTALL
+76 silly gunzTarPerm extractEntry deps/lame/INSTALL.configure
+77 silly gunzTarPerm extractEntry deps/lame/ACM/Makefile.in
+78 silly gunzTarPerm extractEntry deps/lame/ACM/ACM.cpp
+79 silly gunzTarPerm extractEntry deps/lame/ACM/ACMStream.cpp
+80 silly gunzTarPerm extractEntry deps/lame/ACM/ACMStream.h
+81 silly gunzTarPerm extractEntry deps/lame/ACM/ADbg/ADbg.cpp
+82 silly gunzTarPerm extractEntry deps/lame/ACM/ADbg/ADbg.h
+83 silly gunzTarPerm extractEntry deps/lame/ACM/ADbg/Makefile.am
+84 silly gunzTarPerm extractEntry deps/lame/ACM/ADbg/Makefile.in
+85 silly gunzTarPerm extractEntry deps/lame/ACM/AEncodeProperties.cpp
+86 silly gunzTarPerm extractEntry deps/lame/ACM/AEncodeProperties.h
+87 silly gunzTarPerm extractEntry deps/lame/ACM/DecodeStream.cpp
+88 silly gunzTarPerm extractEntry deps/lame/ACM/DecodeStream.h
+89 silly gunzTarPerm extractEntry deps/lame/ACM/LameACM.inf
+90 silly gunzTarPerm extractEntry deps/lame/ACM/Makefile.am
+91 silly gunzTarPerm extractEntry deps/lame/ACM/ACM.h
+92 silly gunzTarPerm extractEntry deps/lame/ACM/TODO
+93 silly gunzTarPerm extractEntry deps/lame/ACM/acm.rc
+94 silly gunzTarPerm extractEntry deps/lame/ACM/adebug.h
+95 silly gunzTarPerm extractEntry deps/lame/ACM/ddk/Makefile.am
+96 silly gunzTarPerm extractEntry deps/lame/ACM/ddk/Makefile.in
+97 silly gunzTarPerm extractEntry deps/lame/ACM/ddk/msacmdrv.h
+98 silly gunzTarPerm extractEntry deps/lame/ACM/lame.ico
+99 silly gunzTarPerm extractEntry deps/lame/ACM/lameACM.def
+100 silly gunzTarPerm extractEntry deps/lame/ACM/lame_acm.xml
+101 silly gunzTarPerm extractEntry deps/lame/ACM/main.cpp
+102 silly gunzTarPerm extractEntry deps/lame/ACM/readme.txt
+103 silly gunzTarPerm extractEntry deps/lame/ACM/resource.h
+104 silly gunzTarPerm extractEntry deps/lame/ACM/tinyxml/makedistwin.bat
+105 silly gunzTarPerm extractEntry deps/lame/ACM/tinyxml/Makefile.am
+106 silly gunzTarPerm extractEntry deps/lame/ACM/tinyxml/Makefile.tinyxml
+107 silly gunzTarPerm extractEntry deps/lame/ACM/tinyxml/changes.txt
+108 silly gunzTarPerm extractEntry deps/lame/ACM/tinyxml/dox
+109 silly gunzTarPerm extractEntry deps/lame/ACM/tinyxml/makedistlinux
+110 silly gunzTarPerm extractEntry deps/lame/ACM/tinyxml/Makefile.in
+111 silly gunzTarPerm extractEntry deps/lame/ACM/tinyxml/readme.txt
+112 silly gunzTarPerm extractEntry deps/lame/ACM/tinyxml/tinyxml.cpp
+113 silly gunzTarPerm extractEntry deps/lame/ACM/tinyxml/tinyxml.h
+114 silly gunzTarPerm extractEntry deps/lame/ACM/tinyxml/tinyxmlerror.cpp
+115 silly gunzTarPerm extractEntry deps/lame/ACM/tinyxml/tinyxmlparser.cpp
+116 silly gunzTarPerm extractEntry deps/lame/ACM/tinyxml/xmltest.cpp
+117 silly gunzTarPerm extractEntry deps/lame/Makefile.MSVC
+118 silly gunzTarPerm extractEntry deps/lame/Makefile.am
+119 silly gunzTarPerm extractEntry deps/lame/Makefile.am.global
+120 silly gunzTarPerm extractEntry deps/lame/Makefile.in
+121 silly gunzTarPerm extractEntry deps/lame/Makefile.unix
+122 silly gunzTarPerm extractEntry deps/lame/COPYING
+123 silly gunzTarPerm extractEntry deps/lame/README.WINGTK
+124 silly gunzTarPerm extractEntry deps/lame/STYLEGUIDE
+125 silly gunzTarPerm extractEntry deps/lame/TODO
+126 silly gunzTarPerm extractEntry deps/lame/USAGE
+127 silly gunzTarPerm extractEntry deps/lame/acinclude.m4
+128 silly gunzTarPerm extractEntry deps/lame/aclocal.m4
+129 silly gunzTarPerm extractEntry deps/lame/config/README
+130 silly gunzTarPerm extractEntry deps/lame/config/freebsd/x64/config.h
+131 silly gunzTarPerm extractEntry deps/lame/config/linux/arm/config.h
+132 silly gunzTarPerm extractEntry deps/lame/config/linux/ia32/config.h
+133 silly gunzTarPerm extractEntry deps/lame/config/linux/x64/config.h
+134 silly gunzTarPerm extractEntry deps/lame/config/mac/ia32/config.h
+135 silly gunzTarPerm extractEntry deps/lame/config/mac/x64/config.h
+136 silly gunzTarPerm extractEntry deps/lame/config/solaris/ia32/config.h
+137 silly gunzTarPerm extractEntry deps/lame/config/solaris/x64/config.h
+138 silly gunzTarPerm extractEntry deps/lame/config/win/ia32/config.h
+139 silly gunzTarPerm extractEntry deps/lame/config/win/x64/config.h
+140 silly gunzTarPerm extractEntry deps/lame/config.guess
+141 silly gunzTarPerm extractEntry deps/lame/config.h.in
+142 silly gunzTarPerm extractEntry deps/lame/config.rpath
+143 silly gunzTarPerm extractEntry deps/lame/API
+144 silly gunzTarPerm extractEntry deps/lame/configMS.h
+145 silly gunzTarPerm extractEntry deps/lame/configure
+146 silly gunzTarPerm extractEntry deps/lame/configure.in
+147 silly gunzTarPerm extractEntry deps/lame/debian/lame.docs
+148 silly gunzTarPerm extractEntry deps/lame/debian/Makefile.am
+149 silly gunzTarPerm extractEntry deps/lame/debian/changelog
+150 silly gunzTarPerm extractEntry deps/lame/debian/compat
+151 silly gunzTarPerm extractEntry deps/lame/debian/control
+152 silly gunzTarPerm extractEntry deps/lame/debian/copyright
+153 silly gunzTarPerm extractEntry deps/lame/debian/Makefile.in
+154 silly gunzTarPerm extractEntry deps/lame/debian/lame.install
+155 silly gunzTarPerm extractEntry deps/lame/debian/lame.manpages
+156 silly gunzTarPerm extractEntry deps/lame/debian/libmp3lame-dev.install
+157 silly gunzTarPerm extractEntry deps/lame/debian/libmp3lame0.install
+158 silly gunzTarPerm extractEntry deps/lame/debian/rules
+159 silly gunzTarPerm extractEntry deps/lame/debian/watch
+160 silly gunzTarPerm extractEntry deps/lame/depcomp
+161 silly gunzTarPerm extractEntry deps/lame/doc/Makefile.am
+162 silly gunzTarPerm extractEntry deps/lame/doc/Makefile.in
+163 silly gunzTarPerm extractEntry deps/lame/doc/html/history.html
+164 silly gunzTarPerm extractEntry deps/lame/doc/html/Makefile.am
+165 silly gunzTarPerm extractEntry deps/lame/doc/html/about.html
+166 silly gunzTarPerm extractEntry deps/lame/doc/html/abr.html
+167 silly gunzTarPerm extractEntry deps/lame/doc/html/cbr.html
+168 silly gunzTarPerm extractEntry deps/lame/doc/html/contact.html
+169 silly gunzTarPerm extractEntry deps/lame/doc/html/contributors.html
+170 silly gunzTarPerm extractEntry deps/lame/doc/html/detailed.html
+171 silly gunzTarPerm extractEntry deps/lame/doc/html/Makefile.in
+172 silly gunzTarPerm extractEntry deps/lame/doc/html/index.html
+173 silly gunzTarPerm extractEntry deps/lame/doc/html/introduction.html
+174 silly gunzTarPerm extractEntry deps/lame/doc/html/links.html
+175 silly gunzTarPerm extractEntry deps/lame/doc/html/list.html
+176 silly gunzTarPerm extractEntry deps/lame/doc/html/ms_stereo.html
+177 silly gunzTarPerm extractEntry deps/lame/doc/html/usage.html
+178 silly gunzTarPerm extractEntry deps/lame/doc/html/vbr.html
+179 silly gunzTarPerm extractEntry deps/lame/doc/man/Makefile.am
+180 silly gunzTarPerm extractEntry deps/lame/doc/man/Makefile.in
+181 silly gunzTarPerm extractEntry deps/lame/doc/man/lame.1
+182 silly gunzTarPerm extractEntry deps/lame/dshow/README
+183 silly gunzTarPerm extractEntry deps/lame/dshow/PropPage_adv.h
+184 silly gunzTarPerm extractEntry deps/lame/dshow/Makefile.am
+185 silly gunzTarPerm extractEntry deps/lame/dshow/Makefile.in
+186 silly gunzTarPerm extractEntry deps/lame/dshow/Mpegac.cpp
+187 silly gunzTarPerm extractEntry deps/lame/dshow/Mpegac.def
+188 silly gunzTarPerm extractEntry deps/lame/dshow/Mpegac.h
+189 silly gunzTarPerm extractEntry deps/lame/dshow/PropPage.cpp
+190 silly gunzTarPerm extractEntry deps/lame/dshow/PropPage.h
+191 silly gunzTarPerm extractEntry deps/lame/dshow/PropPage_adv.cpp
+192 silly gunzTarPerm extractEntry deps/lame/dshow/Encoder.h
+193 silly gunzTarPerm extractEntry deps/lame/dshow/Property.rc
+194 silly gunzTarPerm extractEntry deps/lame/dshow/Encoder.cpp
+195 silly gunzTarPerm extractEntry deps/lame/dshow/REG.CPP
+196 silly gunzTarPerm extractEntry deps/lame/dshow/REG.H
+197 silly gunzTarPerm extractEntry deps/lame/dshow/UIDS.H
+198 silly gunzTarPerm extractEntry deps/lame/dshow/aboutprp.cpp
+199 silly gunzTarPerm extractEntry deps/lame/dshow/aboutprp.h
+200 silly gunzTarPerm extractEntry deps/lame/dshow/elogo.ico
+201 silly gunzTarPerm extractEntry deps/lame/dshow/iaudioprops.h
+202 silly gunzTarPerm extractEntry deps/lame/dshow/resource.h
+203 silly gunzTarPerm extractEntry deps/lame/frontend/gtkanal.h
+204 silly gunzTarPerm extractEntry deps/lame/frontend/Makefile.am
+205 silly gunzTarPerm extractEntry deps/lame/frontend/amiga_mpega.c
+206 silly gunzTarPerm extractEntry deps/lame/frontend/brhist.c
+207 silly gunzTarPerm extractEntry deps/lame/frontend/brhist.h
+208 silly gunzTarPerm extractEntry deps/lame/frontend/console.c
+209 silly gunzTarPerm extractEntry deps/lame/frontend/console.h
+210 silly gunzTarPerm extractEntry deps/lame/frontend/depcomp
+211 silly gunzTarPerm extractEntry deps/lame/frontend/get_audio.c
+212 silly gunzTarPerm extractEntry deps/lame/frontend/get_audio.h
+213 silly gunzTarPerm extractEntry deps/lame/frontend/gpkplotting.c
+214 silly gunzTarPerm extractEntry deps/lame/frontend/gpkplotting.h
+215 silly gunzTarPerm extractEntry deps/lame/frontend/gtkanal.c
+216 silly gunzTarPerm extractEntry deps/lame/frontend/Makefile.in
+217 silly gunzTarPerm extractEntry deps/lame/frontend/lame_main.c
+218 silly gunzTarPerm extractEntry deps/lame/frontend/lametime.c
+219 silly gunzTarPerm extractEntry deps/lame/frontend/lametime.h
+220 silly gunzTarPerm extractEntry deps/lame/frontend/main.c
+221 silly gunzTarPerm extractEntry deps/lame/frontend/main.h
+222 silly gunzTarPerm extractEntry deps/lame/frontend/mp3rtp.c
+223 silly gunzTarPerm extractEntry deps/lame/frontend/mp3x.c
+224 silly gunzTarPerm extractEntry deps/lame/frontend/parse.c
+225 silly gunzTarPerm extractEntry deps/lame/frontend/parse.h
+226 silly gunzTarPerm extractEntry deps/lame/frontend/rtp.c
+227 silly gunzTarPerm extractEntry deps/lame/frontend/rtp.h
+228 silly gunzTarPerm extractEntry deps/lame/frontend/timestatus.c
+229 silly gunzTarPerm extractEntry deps/lame/frontend/timestatus.h
+230 silly gunzTarPerm extractEntry deps/lame/include/Makefile.am
+231 silly gunzTarPerm extractEntry deps/lame/include/Makefile.in
+232 silly gunzTarPerm extractEntry deps/lame/include/lame.def
+233 silly gunzTarPerm extractEntry deps/lame/include/lame.h
+234 silly gunzTarPerm extractEntry deps/lame/include/libmp3lame.sym
+235 silly gunzTarPerm extractEntry deps/lame/install-sh
+236 silly gunzTarPerm extractEntry deps/lame/lame.bat
+237 silly gunzTarPerm extractEntry deps/lame/lame.spec
+238 silly gunzTarPerm extractEntry deps/lame/lame.spec.in
+239 silly gunzTarPerm extractEntry deps/lame/libmp3lame/mpglib_interface.c
+240 silly gunzTarPerm extractEntry deps/lame/libmp3lame/Makefile.am
+241 silly gunzTarPerm extractEntry deps/lame/libmp3lame/VbrTag.c
+242 silly gunzTarPerm extractEntry deps/lame/libmp3lame/VbrTag.h
+243 silly gunzTarPerm extractEntry deps/lame/libmp3lame/bitstream.c
+244 silly gunzTarPerm extractEntry deps/lame/libmp3lame/bitstream.h
+245 silly gunzTarPerm extractEntry deps/lame/libmp3lame/depcomp
+246 silly gunzTarPerm extractEntry deps/lame/libmp3lame/encoder.c
+247 silly gunzTarPerm extractEntry deps/lame/libmp3lame/encoder.h
+248 silly gunzTarPerm extractEntry deps/lame/libmp3lame/fft.c
+249 silly gunzTarPerm extractEntry deps/lame/libmp3lame/fft.h
+250 silly gunzTarPerm extractEntry deps/lame/libmp3lame/gain_analysis.c
+251 silly gunzTarPerm extractEntry deps/lame/libmp3lame/gain_analysis.h
+252 silly gunzTarPerm extractEntry deps/lame/libmp3lame/i386/fft3dn.nas
+253 silly gunzTarPerm extractEntry deps/lame/libmp3lame/i386/Makefile.am
+254 silly gunzTarPerm extractEntry deps/lame/libmp3lame/i386/choose_table.nas
+255 silly gunzTarPerm extractEntry deps/lame/libmp3lame/i386/cpu_feat.nas
+256 silly gunzTarPerm extractEntry deps/lame/libmp3lame/i386/fft.nas
+257 silly gunzTarPerm extractEntry deps/lame/libmp3lame/i386/Makefile.in
+258 silly gunzTarPerm extractEntry deps/lame/libmp3lame/i386/fftfpu.nas
+259 silly gunzTarPerm extractEntry deps/lame/libmp3lame/i386/fftsse.nas
+260 silly gunzTarPerm extractEntry deps/lame/libmp3lame/i386/ffttbl.nas
+261 silly gunzTarPerm extractEntry deps/lame/libmp3lame/i386/nasm.h
+262 silly gunzTarPerm extractEntry deps/lame/libmp3lame/i386/scalar.nas
+263 silly gunzTarPerm extractEntry deps/lame/libmp3lame/id3tag.c
+264 silly gunzTarPerm extractEntry deps/lame/libmp3lame/id3tag.h
+265 silly gunzTarPerm extractEntry deps/lame/libmp3lame/l3side.h
+266 silly gunzTarPerm extractEntry deps/lame/libmp3lame/lame-analysis.h
+267 silly gunzTarPerm extractEntry deps/lame/libmp3lame/lame.c
+268 silly gunzTarPerm extractEntry deps/lame/libmp3lame/lame.rc
+269 silly gunzTarPerm extractEntry deps/lame/libmp3lame/lame_global_flags.h
+270 silly gunzTarPerm extractEntry deps/lame/libmp3lame/lameerror.h
+271 silly gunzTarPerm extractEntry deps/lame/libmp3lame/logoe.ico
+272 silly gunzTarPerm extractEntry deps/lame/libmp3lame/machine.h
+273 silly gunzTarPerm extractEntry deps/lame/libmp3lame/Makefile.in
+274 silly gunzTarPerm extractEntry deps/lame/libmp3lame/newmdct.c
+275 silly gunzTarPerm extractEntry deps/lame/libmp3lame/newmdct.h
+276 silly gunzTarPerm extractEntry deps/lame/libmp3lame/presets.c
+277 silly gunzTarPerm extractEntry deps/lame/libmp3lame/psymodel.c
+278 silly gunzTarPerm extractEntry deps/lame/libmp3lame/psymodel.h
+279 silly gunzTarPerm extractEntry deps/lame/libmp3lame/quantize.c
+280 silly gunzTarPerm extractEntry deps/lame/libmp3lame/quantize.h
+281 silly gunzTarPerm extractEntry deps/lame/libmp3lame/quantize_pvt.c
+282 silly gunzTarPerm extractEntry deps/lame/libmp3lame/quantize_pvt.h
+283 silly gunzTarPerm extractEntry deps/lame/libmp3lame/reservoir.c
+284 silly gunzTarPerm extractEntry deps/lame/libmp3lame/reservoir.h
+285 silly gunzTarPerm extractEntry deps/lame/libmp3lame/set_get.c
+286 silly gunzTarPerm extractEntry deps/lame/libmp3lame/set_get.h
+287 silly gunzTarPerm extractEntry deps/lame/libmp3lame/tables.c
+288 silly gunzTarPerm extractEntry deps/lame/libmp3lame/tables.h
+289 silly gunzTarPerm extractEntry deps/lame/libmp3lame/takehiro.c
+290 silly gunzTarPerm extractEntry deps/lame/libmp3lame/util.c
+291 silly gunzTarPerm extractEntry deps/lame/libmp3lame/util.h
+292 silly gunzTarPerm extractEntry deps/lame/libmp3lame/vbrquantize.c
+293 silly gunzTarPerm extractEntry deps/lame/libmp3lame/vbrquantize.h
+294 silly gunzTarPerm extractEntry deps/lame/libmp3lame/vector/Makefile.am
+295 silly gunzTarPerm extractEntry deps/lame/libmp3lame/vector/Makefile.in
+296 silly gunzTarPerm extractEntry deps/lame/libmp3lame/vector/lame_intrin.h
+297 silly gunzTarPerm extractEntry deps/lame/libmp3lame/vector/xmm_quantize_sub.c
+298 silly gunzTarPerm extractEntry deps/lame/libmp3lame/version.c
+299 silly gunzTarPerm extractEntry deps/lame/libmp3lame/version.h
+300 silly gunzTarPerm extractEntry deps/lame/libmp3lame.gyp
+301 silly gunzTarPerm extractEntry deps/lame/ltmain.sh
+302 silly gunzTarPerm extractEntry deps/lame/mac/LAME.mcp
+303 silly gunzTarPerm extractEntry deps/lame/mac/LAME_Carbon_Debug.pch
+304 silly gunzTarPerm extractEntry deps/lame/mac/LAME_Carbon_Final.pch
+305 silly gunzTarPerm extractEntry deps/lame/mac/LAME_Classic_Debug.pch
+306 silly gunzTarPerm extractEntry deps/lame/mac/LAME_Classic_Final.pch
+307 silly gunzTarPerm extractEntry deps/lame/mac/MacDLLMain.c
+308 silly gunzTarPerm extractEntry deps/lame/mac/Makefile.am
+309 silly gunzTarPerm extractEntry deps/lame/mac/Makefile.in
+310 silly gunzTarPerm extractEntry deps/lame/mac/Precompile_Common.h
+311 silly gunzTarPerm extractEntry deps/lame/macosx/English.lproj/InfoPlist.strings
+312 silly gunzTarPerm extractEntry deps/lame/macosx/English.lproj/Makefile.am
+313 silly gunzTarPerm extractEntry deps/lame/macosx/English.lproj/Makefile.in
+314 silly gunzTarPerm extractEntry deps/lame/macosx/Info.plist
+315 silly gunzTarPerm extractEntry deps/lame/macosx/LAME.xcodeproj/Makefile.am
+316 silly gunzTarPerm extractEntry deps/lame/macosx/LAME.xcodeproj/Makefile.in
+317 silly gunzTarPerm extractEntry deps/lame/macosx/LAME.xcodeproj/project.pbxproj
+318 silly gunzTarPerm extractEntry deps/lame/macosx/LAME_Prefix.pch
+319 silly gunzTarPerm extractEntry deps/lame/macosx/Makefile.am
+320 silly gunzTarPerm extractEntry deps/lame/macosx/Makefile.in
+321 silly gunzTarPerm extractEntry deps/lame/misc/lame4dos.bat
+322 silly gunzTarPerm extractEntry deps/lame/misc/Lame.vbs
+323 silly gunzTarPerm extractEntry deps/lame/misc/Makefile.in
+324 silly gunzTarPerm extractEntry deps/lame/misc/abx.c
+325 silly gunzTarPerm extractEntry deps/lame/misc/ath.c
+326 silly gunzTarPerm extractEntry deps/lame/misc/auenc
+327 silly gunzTarPerm extractEntry deps/lame/misc/depcomp
+328 silly gunzTarPerm extractEntry deps/lame/misc/Makefile.am
+329 silly gunzTarPerm extractEntry deps/lame/misc/lameGUI.html
+330 silly gunzTarPerm extractEntry deps/lame/misc/lameid3.pl
+331 silly gunzTarPerm extractEntry deps/lame/misc/mk_mp3.sh
+332 silly gunzTarPerm extractEntry deps/lame/misc/mlame
+333 silly gunzTarPerm extractEntry deps/lame/misc/mlame_corr.c
+334 silly gunzTarPerm extractEntry deps/lame/misc/mugeco.sh
+335 silly gunzTarPerm extractEntry deps/lame/misc/scalartest.c
+336 silly gunzTarPerm extractEntry deps/lame/missing
+337 silly gunzTarPerm extractEntry deps/lame/mpglib/README
+338 silly gunzTarPerm extractEntry deps/lame/mpglib/interface.c
+339 silly gunzTarPerm extractEntry deps/lame/mpglib/Makefile.in
+340 silly gunzTarPerm extractEntry deps/lame/mpglib/AUTHORS
+341 silly gunzTarPerm extractEntry deps/lame/mpglib/common.c
+342 silly gunzTarPerm extractEntry deps/lame/mpglib/common.h
+343 silly gunzTarPerm extractEntry deps/lame/mpglib/dct64_i386.c
+344 silly gunzTarPerm extractEntry deps/lame/mpglib/dct64_i386.h
+345 silly gunzTarPerm extractEntry deps/lame/mpglib/decode_i386.c
+346 silly gunzTarPerm extractEntry deps/lame/mpglib/decode_i386.h
+347 silly gunzTarPerm extractEntry deps/lame/mpglib/depcomp
+348 silly gunzTarPerm extractEntry deps/lame/mpglib/huffman.h
+349 silly gunzTarPerm extractEntry deps/lame/mpglib/Makefile.am
+350 silly gunzTarPerm extractEntry deps/lame/mpglib/interface.h
+351 silly gunzTarPerm extractEntry deps/lame/mpglib/l2tables.h
+352 silly gunzTarPerm extractEntry deps/lame/mpglib/layer1.c
+353 silly gunzTarPerm extractEntry deps/lame/mpglib/layer1.h
+354 silly gunzTarPerm extractEntry deps/lame/mpglib/layer2.c
+355 silly gunzTarPerm extractEntry deps/lame/mpglib/layer2.h
+356 silly gunzTarPerm extractEntry deps/lame/mpglib/layer3.c
+357 silly gunzTarPerm extractEntry deps/lame/mpglib/layer3.h
+358 silly gunzTarPerm extractEntry deps/lame/mpglib/mpg123.h
+359 silly gunzTarPerm extractEntry deps/lame/mpglib/mpglib.h
+360 silly gunzTarPerm extractEntry deps/lame/mpglib/tabinit.c
+361 silly gunzTarPerm extractEntry deps/lame/mpglib/tabinit.h
+362 silly gunzTarPerm extractEntry deps/lame/test.c
+363 silly gunzTarPerm extractEntry deps/lame/testcase.mp3
+364 silly gunzTarPerm extractEntry deps/lame/testcase.wav
+365 silly gunzTarPerm extractEntry deps/lame/vc_solution/vc9_lame_dll.vcproj
+366 silly gunzTarPerm extractEntry deps/lame/vc_solution/Makefile.am
+367 silly gunzTarPerm extractEntry deps/lame/vc_solution/arch_nasm.vsprops
+368 silly gunzTarPerm extractEntry deps/lame/vc_solution/arch_sse2.vsprops
+369 silly gunzTarPerm extractEntry deps/lame/vc_solution/arch_x87.vsprops
+370 silly gunzTarPerm extractEntry deps/lame/vc_solution/vc9_lame.sln
+371 silly gunzTarPerm extractEntry deps/lame/vc_solution/vc9_lame_acm.vcproj
+372 silly gunzTarPerm extractEntry deps/lame/vc_solution/vc9_lame_acm_adbg.vcproj
+373 silly gunzTarPerm extractEntry deps/lame/vc_solution/vc9_lame_acm_tinyxml.vcproj
+374 silly gunzTarPerm extractEntry deps/lame/vc_solution/vc9_lame_clients.sln
+375 silly gunzTarPerm extractEntry deps/lame/vc_solution/vc9_lame_config.vsprops
+376 silly gunzTarPerm extractEntry deps/lame/vc_solution/Makefile.in
+377 silly gunzTarPerm extractEntry deps/lame/vc_solution/vc9_lame_dll_example.vcproj
+378 silly gunzTarPerm extractEntry deps/lame/vc_solution/vc9_lame_dshow.vcproj
+379 silly gunzTarPerm extractEntry deps/lame/vc_solution/vc9_lame_lame.vcproj
+380 silly gunzTarPerm extractEntry deps/lame/vc_solution/vc9_lame_mp3rtp.vcproj
+381 silly gunzTarPerm extractEntry deps/lame/vc_solution/vc9_lame_mp3x.vcproj
+382 silly gunzTarPerm extractEntry deps/lame/vc_solution/vc9_lame_test.vcproj
+383 silly gunzTarPerm extractEntry deps/lame/vc_solution/vc9_libmp3lame.vcproj
+384 silly gunzTarPerm extractEntry deps/lame/vc_solution/vc9_libmp3lame_dll.vcproj
+385 silly gunzTarPerm extractEntry deps/lame/vc_solution/vc9_mpglib.vcproj
+386 silly gunzTarPerm extractEntry deps/lame/vc_solution/vc9_nasm.rules
+387 silly gunzTarPerm extractEntry deps/mpg123/README
+388 silly gunzTarPerm extractEntry deps/mpg123/doc/LICENSE
+389 silly gunzTarPerm extractEntry deps/mpg123/doc/README.gain
+390 silly gunzTarPerm extractEntry deps/mpg123/doc/BUGS
+391 silly gunzTarPerm extractEntry deps/mpg123/doc/CONTACT
+392 silly gunzTarPerm extractEntry deps/mpg123/doc/ACCURACY
+393 silly gunzTarPerm extractEntry deps/mpg123/doc/Makefile.am
+394 silly gunzTarPerm extractEntry deps/mpg123/doc/Makefile.in
+395 silly gunzTarPerm extractEntry deps/mpg123/doc/PATENTS
+396 silly gunzTarPerm extractEntry deps/mpg123/doc/README.3DNOW
+397 silly gunzTarPerm extractEntry deps/mpg123/doc/BENCHMARKING
+398 silly gunzTarPerm extractEntry deps/mpg123/doc/README.remote
+399 silly gunzTarPerm extractEntry deps/mpg123/doc/ROAD_TO_LGPL
+400 silly gunzTarPerm extractEntry deps/mpg123/doc/THANKS
+401 silly gunzTarPerm extractEntry deps/mpg123/doc/TODO
+402 silly gunzTarPerm extractEntry deps/mpg123/doc/doxy_examples.c
+403 silly gunzTarPerm extractEntry deps/mpg123/doc/doxygen.conf
+404 silly gunzTarPerm extractEntry deps/mpg123/doc/doxyhead.xhtml
+405 silly gunzTarPerm extractEntry deps/mpg123/doc/examples/Makefile
+406 silly gunzTarPerm extractEntry deps/mpg123/doc/examples/dump_seekindex.c
+407 silly gunzTarPerm extractEntry deps/mpg123/doc/examples/extract_frames.c
+408 silly gunzTarPerm extractEntry deps/mpg123/doc/examples/feedseek.c
+409 silly gunzTarPerm extractEntry deps/mpg123/doc/examples/id3dump.c
+410 silly gunzTarPerm extractEntry deps/mpg123/doc/examples/mpg123_to_wav.c
+411 silly gunzTarPerm extractEntry deps/mpg123/doc/examples/mpglib.c
+412 silly gunzTarPerm extractEntry deps/mpg123/doc/examples/scan.c
+413 silly gunzTarPerm extractEntry deps/mpg123/doc/libmpg123_speed.txt
+414 silly gunzTarPerm extractEntry deps/mpg123/ChangeLog
+415 silly gunzTarPerm extractEntry deps/mpg123/INSTALL
+416 silly gunzTarPerm extractEntry deps/mpg123/Makefile.am
+417 silly gunzTarPerm extractEntry deps/mpg123/Makefile.in
+418 silly gunzTarPerm extractEntry deps/mpg123/NEWS
+419 silly gunzTarPerm extractEntry deps/mpg123/NEWS.libmpg123
+420 silly gunzTarPerm extractEntry deps/mpg123/AUTHORS
+421 silly gunzTarPerm extractEntry deps/mpg123/TODO
+422 silly gunzTarPerm extractEntry deps/mpg123/aclocal.m4
+423 silly gunzTarPerm extractEntry deps/mpg123/config/freebsd/x64/config.h
+424 silly gunzTarPerm extractEntry deps/mpg123/config/freebsd/x64/mpg123.h
+425 silly gunzTarPerm extractEntry deps/mpg123/config/linux/arm/config.h
+426 silly gunzTarPerm extractEntry deps/mpg123/config/linux/arm/mpg123.h
+427 silly gunzTarPerm extractEntry deps/mpg123/config/linux/ia32/config.h
+428 silly gunzTarPerm extractEntry deps/mpg123/config/linux/ia32/mpg123.h
+429 silly gunzTarPerm extractEntry deps/mpg123/config/linux/x64/config.h
+430 silly gunzTarPerm extractEntry deps/mpg123/config/linux/x64/mpg123.h
+431 silly gunzTarPerm extractEntry deps/mpg123/config/mac/ia32/config.h
+432 silly gunzTarPerm extractEntry deps/mpg123/config/mac/ia32/mpg123.h
+433 silly gunzTarPerm extractEntry deps/mpg123/config/mac/x64/config.h
+434 silly gunzTarPerm extractEntry deps/mpg123/config/mac/x64/mpg123.h
+435 silly gunzTarPerm extractEntry deps/mpg123/config/solaris/ia32/config.h
+436 silly gunzTarPerm extractEntry deps/mpg123/config/solaris/ia32/mpg123.h
+437 silly gunzTarPerm extractEntry deps/mpg123/config/solaris/x64/config.h
+438 silly gunzTarPerm extractEntry deps/mpg123/config/solaris/x64/mpg123.h
+439 silly gunzTarPerm extractEntry deps/mpg123/config/win/ia32/config.h
+440 silly gunzTarPerm extractEntry deps/mpg123/config/win/ia32/mpg123.h
+441 silly gunzTarPerm extractEntry deps/mpg123/config/win/x64/config.h
+442 silly gunzTarPerm extractEntry deps/mpg123/config/win/x64/mpg123.h
+443 silly gunzTarPerm extractEntry deps/mpg123/configure
+444 silly gunzTarPerm extractEntry deps/mpg123/configure.ac
+445 silly gunzTarPerm extractEntry deps/mpg123/COPYING
+446 silly gunzTarPerm extractEntry deps/mpg123/equalize.dat
+447 silly gunzTarPerm extractEntry deps/mpg123/libmpg123.pc.in
+448 silly gunzTarPerm extractEntry deps/mpg123/m4/addrconfig.m4
+449 silly gunzTarPerm extractEntry deps/mpg123/m4/libtool.m4
+450 silly gunzTarPerm extractEntry deps/mpg123/m4/ltoptions.m4
+451 silly gunzTarPerm extractEntry deps/mpg123/m4/ltsugar.m4
+452 silly gunzTarPerm extractEntry deps/mpg123/m4/ltversion.m4
+453 silly gunzTarPerm extractEntry deps/mpg123/m4/lt~obsolete.m4
+454 silly gunzTarPerm extractEntry deps/mpg123/makedll.sh
+455 silly gunzTarPerm extractEntry deps/mpg123/man1/mpg123.1
+456 silly gunzTarPerm extractEntry deps/mpg123/mpg123.gyp
+457 silly gunzTarPerm extractEntry deps/mpg123/mpg123.spec
+458 silly gunzTarPerm extractEntry deps/mpg123/mpg123.spec.in
+459 silly gunzTarPerm extractEntry deps/mpg123/ports/README
+460 silly gunzTarPerm extractEntry deps/mpg123/ports/MSVC++/2005/libmpg123/libmpg123.vcproj
+461 silly gunzTarPerm extractEntry deps/mpg123/ports/MSVC++/2008/dump_seekindex/dump_seekindex.vcproj
+462 silly gunzTarPerm extractEntry deps/mpg123/ports/MSVC++/2008/feedseek/feedseek.vcproj
+463 silly gunzTarPerm extractEntry deps/mpg123/ports/MSVC++/2008/libmpg123/libmpg123.vcproj
+464 silly gunzTarPerm extractEntry deps/mpg123/ports/MSVC++/2008/mpg123.sln
+465 silly gunzTarPerm extractEntry deps/mpg123/ports/MSVC++/2008/mpglib/mpglib.vcproj
+466 silly gunzTarPerm extractEntry deps/mpg123/ports/MSVC++/2008/scan/scan.vcproj
+467 silly gunzTarPerm extractEntry deps/mpg123/ports/MSVC++/2008clr/2008clr.sln
+468 silly gunzTarPerm extractEntry deps/mpg123/ports/MSVC++/2008clr/examples/ReplaceReaderclr/Program.cs
+469 silly gunzTarPerm extractEntry deps/mpg123/ports/MSVC++/2008clr/examples/ReplaceReaderclr/Properties/AssemblyInfo.cs
+470 silly gunzTarPerm extractEntry deps/mpg123/ports/MSVC++/2008clr/examples/ReplaceReaderclr/ReplaceReaderclr.csproj
+471 silly gunzTarPerm extractEntry deps/mpg123/ports/MSVC++/2008clr/examples/feedseekclr/Program.cs
+472 silly gunzTarPerm extractEntry deps/mpg123/ports/MSVC++/2008clr/examples/feedseekclr/Properties/AssemblyInfo.cs
+473 silly gunzTarPerm extractEntry deps/mpg123/ports/MSVC++/2008clr/examples/feedseekclr/feedseekclr.csproj
+474 silly gunzTarPerm extractEntry deps/mpg123/ports/MSVC++/2008clr/examples/scanclr/Program.cs
+475 silly gunzTarPerm extractEntry deps/mpg123/ports/MSVC++/2008clr/examples/scanclr/Properties/AssemblyInfo.cs
+476 silly gunzTarPerm extractEntry deps/mpg123/ports/MSVC++/2008clr/examples/scanclr/scanclr.csproj
+477 silly gunzTarPerm extractEntry deps/mpg123/ports/MSVC++/2008clr/mpg123clr/mpg123clr.cpp
+478 silly gunzTarPerm extractEntry deps/mpg123/ports/MSVC++/2008clr/mpg123clr/AssemblyInfo.cpp
+479 silly gunzTarPerm extractEntry deps/mpg123/ports/MSVC++/2008clr/mpg123clr/advanced.cpp
+480 silly gunzTarPerm extractEntry deps/mpg123/ports/MSVC++/2008clr/mpg123clr/advanced.h
+481 silly gunzTarPerm extractEntry deps/mpg123/ports/MSVC++/2008clr/mpg123clr/dllmain.cpp
+482 silly gunzTarPerm extractEntry deps/mpg123/ports/MSVC++/2008clr/mpg123clr/enum.h
+483 silly gunzTarPerm extractEntry deps/mpg123/ports/MSVC++/2008clr/mpg123clr/error.cpp
+484 silly gunzTarPerm extractEntry deps/mpg123/ports/MSVC++/2008clr/mpg123clr/error.h
+485 silly gunzTarPerm extractEntry deps/mpg123/ports/MSVC++/2008clr/mpg123clr/id3v1.cpp
+486 silly gunzTarPerm extractEntry deps/mpg123/ports/MSVC++/2008clr/mpg123clr/id3v1.h
+487 silly gunzTarPerm extractEntry deps/mpg123/ports/MSVC++/2008clr/mpg123clr/id3v2.cpp
+488 silly gunzTarPerm extractEntry deps/mpg123/ports/MSVC++/2008clr/mpg123clr/id3v2.h
+489 silly gunzTarPerm extractEntry deps/mpg123/ports/MSVC++/2008clr/mpg123clr/ReadMe.txt
+490 silly gunzTarPerm extractEntry deps/mpg123/ports/MSVC++/2008clr/mpg123clr/mpg123clr.h
+491 silly gunzTarPerm extractEntry deps/mpg123/ports/MSVC++/2008clr/mpg123clr/mpg123clr.rc
+492 silly gunzTarPerm extractEntry deps/mpg123/ports/MSVC++/2008clr/mpg123clr/mpg123clr.vcproj
+493 silly gunzTarPerm extractEntry deps/mpg123/ports/MSVC++/2008clr/mpg123clr/resource.h
+494 silly gunzTarPerm extractEntry deps/mpg123/ports/MSVC++/2008clr/mpg123clr/stdafx.cpp
+495 silly gunzTarPerm extractEntry deps/mpg123/ports/MSVC++/2008clr/mpg123clr/stdafx.h
+496 silly gunzTarPerm extractEntry deps/mpg123/ports/MSVC++/2008clr/mpg123clr/string.cpp
+497 silly gunzTarPerm extractEntry deps/mpg123/ports/MSVC++/2008clr/mpg123clr/string.h
+498 silly gunzTarPerm extractEntry deps/mpg123/ports/MSVC++/2008clr/mpg123clr/targetver.h
+499 silly gunzTarPerm extractEntry deps/mpg123/ports/MSVC++/2008clr/mpg123clr/text.cpp
+500 silly gunzTarPerm extractEntry deps/mpg123/ports/MSVC++/2008clr/mpg123clr/text.h
+501 silly gunzTarPerm extractEntry deps/mpg123/ports/MSVC++/2010/dump_seekindex/dump_seekindex.vcxproj
+502 silly gunzTarPerm extractEntry deps/mpg123/ports/MSVC++/2010/dump_seekindex/dump_seekindex.vcxproj.filters
+503 silly gunzTarPerm extractEntry deps/mpg123/ports/MSVC++/2010/feedseek/feedseek.vcxproj
+504 silly gunzTarPerm extractEntry deps/mpg123/ports/MSVC++/2010/feedseek/feedseek.vcxproj.filters
+505 silly gunzTarPerm extractEntry deps/mpg123/ports/MSVC++/2010/libmpg123/libmpg123.vcxproj
+506 silly gunzTarPerm extractEntry deps/mpg123/ports/MSVC++/2010/mpg123.sln
+507 silly gunzTarPerm extractEntry deps/mpg123/ports/MSVC++/2010/scan/scan.vcxproj
+508 silly gunzTarPerm extractEntry deps/mpg123/ports/MSVC++/2010/scan/scan.vcxproj.filters
+509 silly gunzTarPerm extractEntry deps/mpg123/ports/MSVC++/CMP3Stream/README
+510 silly gunzTarPerm extractEntry deps/mpg123/ports/MSVC++/CMP3Stream/INCLUDE/CORE/CORE_FileIn.H
+511 silly gunzTarPerm extractEntry deps/mpg123/ports/MSVC++/CMP3Stream/INCLUDE/CORE/SourceFilter_MP3.H
+512 silly gunzTarPerm extractEntry deps/mpg123/ports/MSVC++/CMP3Stream/INCLUDE/IIEP_Def.H
+513 silly gunzTarPerm extractEntry deps/mpg123/ports/MSVC++/CMP3Stream/INCLUDE/IIEP_FileIn.H
+514 silly gunzTarPerm extractEntry deps/mpg123/ports/MSVC++/CMP3Stream/SOURCE/CORE_FileIn.CPP
+515 silly gunzTarPerm extractEntry deps/mpg123/ports/MSVC++/CMP3Stream/SOURCE/CORE_Log.CPP
+516 silly gunzTarPerm extractEntry deps/mpg123/ports/MSVC++/CMP3Stream/SOURCE/CORE_Mutex.CPP
+517 silly gunzTarPerm extractEntry deps/mpg123/ports/MSVC++/CMP3Stream/SOURCE/SourceFilter_MP3Stream.CPP
+518 silly gunzTarPerm extractEntry deps/mpg123/ports/MSVC++/CMP3Stream/libMPG123/PLACE_LIBMPG123_SOURCES_HERE
+519 silly gunzTarPerm extractEntry deps/mpg123/ports/MSVC++/CMP3Stream/libMPG123/libMPG123.vcproj
+520 silly gunzTarPerm extractEntry deps/mpg123/ports/MSVC++/config.h
+521 silly gunzTarPerm extractEntry deps/mpg123/ports/MSVC++/examples/feedseek.c
+522 silly gunzTarPerm extractEntry deps/mpg123/ports/MSVC++/examples/scan.c
+523 silly gunzTarPerm extractEntry deps/mpg123/ports/MSVC++/mpg123.h
+524 silly gunzTarPerm extractEntry deps/mpg123/ports/MSVC++/msvc.c
+525 silly gunzTarPerm extractEntry deps/mpg123/ports/Sony_PSP/README
+526 silly gunzTarPerm extractEntry deps/mpg123/ports/Sony_PSP/Makefile.psp
+527 silly gunzTarPerm extractEntry deps/mpg123/ports/Sony_PSP/config.h
+528 silly gunzTarPerm extractEntry deps/mpg123/ports/Sony_PSP/readers.c.patch
+529 silly gunzTarPerm extractEntry deps/mpg123/ports/Xcode/config.h
+530 silly gunzTarPerm extractEntry deps/mpg123/ports/Xcode/mpg123.h
+531 silly gunzTarPerm extractEntry deps/mpg123/ports/Xcode/mpg123.xcodeproj/project.pbxproj
+532 silly gunzTarPerm extractEntry deps/mpg123/ports/mpg123_.pas
+533 silly gunzTarPerm extractEntry deps/mpg123/scripts/benchmark-cpu.pl
+534 silly gunzTarPerm extractEntry deps/mpg123/scripts/tag_lyrics.py
+535 silly gunzTarPerm extractEntry deps/mpg123/src/module.c
+536 silly gunzTarPerm extractEntry deps/mpg123/src/Makefile.am
+537 silly gunzTarPerm extractEntry deps/mpg123/src/audio.c
+538 silly gunzTarPerm extractEntry deps/mpg123/src/audio.h
+539 silly gunzTarPerm extractEntry deps/mpg123/src/buffer.c
+540 silly gunzTarPerm extractEntry deps/mpg123/src/buffer.h
+541 silly gunzTarPerm extractEntry deps/mpg123/src/common.c
+542 silly gunzTarPerm extractEntry deps/mpg123/src/common.h
+543 silly gunzTarPerm extractEntry deps/mpg123/src/config.h.in
+544 silly gunzTarPerm extractEntry deps/mpg123/src/control_generic.c
+545 silly gunzTarPerm extractEntry deps/mpg123/src/equalizer.c
+546 silly gunzTarPerm extractEntry deps/mpg123/src/genre.c
+547 silly gunzTarPerm extractEntry deps/mpg123/src/genre.h
+548 silly gunzTarPerm extractEntry deps/mpg123/src/getlopt.c
+549 silly gunzTarPerm extractEntry deps/mpg123/src/getlopt.h
+550 silly gunzTarPerm extractEntry deps/mpg123/src/httpget.c
+551 silly gunzTarPerm extractEntry deps/mpg123/src/httpget.h
+552 silly gunzTarPerm extractEntry deps/mpg123/src/legacy_module.c
+553 silly gunzTarPerm extractEntry deps/mpg123/src/libmpg123/mpg123lib_intern.h
+554 silly gunzTarPerm extractEntry deps/mpg123/src/libmpg123/Makefile.am
+555 silly gunzTarPerm extractEntry deps/mpg123/src/libmpg123/compat.c
+556 silly gunzTarPerm extractEntry deps/mpg123/src/libmpg123/compat.h
+557 silly gunzTarPerm extractEntry deps/mpg123/src/libmpg123/dct36_3dnow.S
+558 silly gunzTarPerm extractEntry deps/mpg123/src/libmpg123/dct36_3dnowext.S
+559 silly gunzTarPerm extractEntry deps/mpg123/src/libmpg123/dct64.c
+560 silly gunzTarPerm extractEntry deps/mpg123/src/libmpg123/dct64_3dnow.S
+561 silly gunzTarPerm extractEntry deps/mpg123/src/libmpg123/dct64_3dnowext.S
+562 silly gunzTarPerm extractEntry deps/mpg123/src/libmpg123/dct64_altivec.c
+563 silly gunzTarPerm extractEntry deps/mpg123/src/libmpg123/dct64_i386.c
+564 silly gunzTarPerm extractEntry deps/mpg123/src/libmpg123/dct64_i486.c
+565 silly gunzTarPerm extractEntry deps/mpg123/src/libmpg123/dct64_mmx.S
+566 silly gunzTarPerm extractEntry deps/mpg123/src/libmpg123/dct64_neon.S
+567 silly gunzTarPerm extractEntry deps/mpg123/src/libmpg123/dct64_neon_float.S
+568 silly gunzTarPerm extractEntry deps/mpg123/src/libmpg123/dct64_sse.S
+569 silly gunzTarPerm extractEntry deps/mpg123/src/libmpg123/dct64_sse_float.S
+570 silly gunzTarPerm extractEntry deps/mpg123/src/libmpg123/dct64_x86_64.S
+571 silly gunzTarPerm extractEntry deps/mpg123/src/libmpg123/dct64_x86_64_float.S
+572 silly gunzTarPerm extractEntry deps/mpg123/src/libmpg123/debug.h
+573 silly gunzTarPerm extractEntry deps/mpg123/src/libmpg123/decode.h
+574 silly gunzTarPerm extractEntry deps/mpg123/src/libmpg123/dither.c
+575 silly gunzTarPerm extractEntry deps/mpg123/src/libmpg123/dither.h
+576 silly gunzTarPerm extractEntry deps/mpg123/src/libmpg123/equalizer.c
+577 silly gunzTarPerm extractEntry deps/mpg123/src/libmpg123/equalizer_3dnow.S
+578 silly gunzTarPerm extractEntry deps/mpg123/src/libmpg123/feature.c
+579 silly gunzTarPerm extractEntry deps/mpg123/src/libmpg123/format.c
+580 silly gunzTarPerm extractEntry deps/mpg123/src/libmpg123/frame.c
+581 silly gunzTarPerm extractEntry deps/mpg123/src/libmpg123/frame.h
+582 silly gunzTarPerm extractEntry deps/mpg123/src/libmpg123/gapless.h
+583 silly gunzTarPerm extractEntry deps/mpg123/src/libmpg123/getbits.h
+584 silly gunzTarPerm extractEntry deps/mpg123/src/libmpg123/getcpuflags.S
+585 silly gunzTarPerm extractEntry deps/mpg123/src/libmpg123/getcpuflags.h
+586 silly gunzTarPerm extractEntry deps/mpg123/src/libmpg123/huffman.h
+587 silly gunzTarPerm extractEntry deps/mpg123/src/libmpg123/icy.c
+588 silly gunzTarPerm extractEntry deps/mpg123/src/libmpg123/icy.h
+589 silly gunzTarPerm extractEntry deps/mpg123/src/libmpg123/icy2utf8.c
+590 silly gunzTarPerm extractEntry deps/mpg123/src/libmpg123/icy2utf8.h
+591 silly gunzTarPerm extractEntry deps/mpg123/src/libmpg123/id3.c
+592 silly gunzTarPerm extractEntry deps/mpg123/src/libmpg123/id3.h
+593 silly gunzTarPerm extractEntry deps/mpg123/src/libmpg123/index.c
+594 silly gunzTarPerm extractEntry deps/mpg123/src/libmpg123/index.h
+595 silly gunzTarPerm extractEntry deps/mpg123/src/libmpg123/intsym.h
+596 silly gunzTarPerm extractEntry deps/mpg123/src/libmpg123/l12_integer_tables.h
+597 silly gunzTarPerm extractEntry deps/mpg123/src/libmpg123/l2tables.h
+598 silly gunzTarPerm extractEntry deps/mpg123/src/libmpg123/l3_integer_tables.h
+599 silly gunzTarPerm extractEntry deps/mpg123/src/libmpg123/layer1.c
+600 silly gunzTarPerm extractEntry deps/mpg123/src/libmpg123/layer2.c
+601 silly gunzTarPerm extractEntry deps/mpg123/src/libmpg123/layer3.c
+602 silly gunzTarPerm extractEntry deps/mpg123/src/libmpg123/lfs_alias.c
+603 silly gunzTarPerm extractEntry deps/mpg123/src/libmpg123/lfs_wrap.c
+604 silly gunzTarPerm extractEntry deps/mpg123/src/libmpg123/libmpg123.c
+605 silly gunzTarPerm extractEntry deps/mpg123/src/libmpg123/mangle.h
+606 silly gunzTarPerm extractEntry deps/mpg123/src/libmpg123/mpeghead.h
+607 silly gunzTarPerm extractEntry deps/mpg123/src/libmpg123/mpg123.h.in
+608 silly gunzTarPerm extractEntry deps/mpg123/src/libmpg123/Makefile.in
+609 silly gunzTarPerm extractEntry deps/mpg123/src/libmpg123/ntom.c
+610 silly gunzTarPerm extractEntry deps/mpg123/src/libmpg123/optimize.c
+611 silly gunzTarPerm extractEntry deps/mpg123/src/libmpg123/optimize.h
+612 silly gunzTarPerm extractEntry deps/mpg123/src/libmpg123/parse.c
+613 silly gunzTarPerm extractEntry deps/mpg123/src/libmpg123/parse.h
+614 silly gunzTarPerm extractEntry deps/mpg123/src/libmpg123/reader.h
+615 silly gunzTarPerm extractEntry deps/mpg123/src/libmpg123/readers.c
+616 silly gunzTarPerm extractEntry deps/mpg123/src/libmpg123/sample.h
+617 silly gunzTarPerm extractEntry deps/mpg123/src/libmpg123/stringbuf.c
+618 silly gunzTarPerm extractEntry deps/mpg123/src/libmpg123/synth.c
+619 silly gunzTarPerm extractEntry deps/mpg123/src/libmpg123/synth.h
+620 silly gunzTarPerm extractEntry deps/mpg123/src/libmpg123/synth_3dnow.S
+621 silly gunzTarPerm extractEntry deps/mpg123/src/libmpg123/synth_3dnowext.S
+622 silly gunzTarPerm extractEntry deps/mpg123/src/libmpg123/synth_8bit.c
+623 silly gunzTarPerm extractEntry deps/mpg123/src/libmpg123/synth_8bit.h
+624 silly gunzTarPerm extractEntry deps/mpg123/src/libmpg123/synth_altivec.c
+625 silly gunzTarPerm extractEntry deps/mpg123/src/libmpg123/synth_arm.S
+626 silly gunzTarPerm extractEntry deps/mpg123/src/libmpg123/synth_arm_accurate.S
+627 silly gunzTarPerm extractEntry deps/mpg123/src/libmpg123/synth_i486.c
+628 silly gunzTarPerm extractEntry deps/mpg123/src/libmpg123/synth_i586.S
+629 silly gunzTarPerm extractEntry deps/mpg123/src/libmpg123/synth_i586_dither.S
+630 silly gunzTarPerm extractEntry deps/mpg123/src/libmpg123/synth_mmx.S
+631 silly gunzTarPerm extractEntry deps/mpg123/src/libmpg123/synth_mono.h
+632 silly gunzTarPerm extractEntry deps/mpg123/src/libmpg123/synth_neon.S
+633 silly gunzTarPerm extractEntry deps/mpg123/src/libmpg123/synth_neon_accurate.S
+634 silly gunzTarPerm extractEntry deps/mpg123/src/libmpg123/synth_neon_float.S
+635 silly gunzTarPerm extractEntry deps/mpg123/src/libmpg123/synth_neon_s32.S
+636 silly gunzTarPerm extractEntry deps/mpg123/src/libmpg123/synth_ntom.h
+637 silly gunzTarPerm extractEntry deps/mpg123/src/libmpg123/synth_real.c
+638 silly gunzTarPerm extractEntry deps/mpg123/src/libmpg123/synth_s32.c
+639 silly gunzTarPerm extractEntry deps/mpg123/src/libmpg123/synth_sse.S
+640 silly gunzTarPerm extractEntry deps/mpg123/src/libmpg123/synth_sse3d.h
+641 silly gunzTarPerm extractEntry deps/mpg123/src/libmpg123/synth_sse_accurate.S
+642 silly gunzTarPerm extractEntry deps/mpg123/src/libmpg123/synth_sse_float.S
+643 silly gunzTarPerm extractEntry deps/mpg123/src/libmpg123/synth_sse_s32.S
+644 silly gunzTarPerm extractEntry deps/mpg123/src/libmpg123/synth_stereo_neon.S
+645 silly gunzTarPerm extractEntry deps/mpg123/src/libmpg123/synth_stereo_neon_accurate.S
+646 silly gunzTarPerm extractEntry deps/mpg123/src/libmpg123/synth_stereo_neon_float.S
+647 silly gunzTarPerm extractEntry deps/mpg123/src/libmpg123/synth_stereo_neon_s32.S
+648 silly gunzTarPerm extractEntry deps/mpg123/src/libmpg123/synth_stereo_sse_accurate.S
+649 silly gunzTarPerm extractEntry deps/mpg123/src/libmpg123/synth_stereo_sse_float.S
+650 silly gunzTarPerm extractEntry deps/mpg123/src/libmpg123/synth_stereo_sse_s32.S
+651 silly gunzTarPerm extractEntry deps/mpg123/src/libmpg123/synth_stereo_x86_64.S
+652 silly gunzTarPerm extractEntry deps/mpg123/src/libmpg123/synth_stereo_x86_64_accurate.S
+653 silly gunzTarPerm extractEntry deps/mpg123/src/libmpg123/synth_stereo_x86_64_float.S
+654 silly gunzTarPerm extractEntry deps/mpg123/src/libmpg123/synth_stereo_x86_64_s32.S
+655 silly gunzTarPerm extractEntry deps/mpg123/src/libmpg123/synth_x86_64.S
+656 silly gunzTarPerm extractEntry deps/mpg123/src/libmpg123/synth_x86_64_accurate.S
+657 silly gunzTarPerm extractEntry deps/mpg123/src/libmpg123/synth_x86_64_float.S
+658 silly gunzTarPerm extractEntry deps/mpg123/src/libmpg123/synth_x86_64_s32.S
+659 silly gunzTarPerm extractEntry deps/mpg123/src/libmpg123/synths.h
+660 silly gunzTarPerm extractEntry deps/mpg123/src/libmpg123/tabinit.c
+661 silly gunzTarPerm extractEntry deps/mpg123/src/libmpg123/tabinit_mmx.S
+662 silly gunzTarPerm extractEntry deps/mpg123/src/libmpg123/testcpu.c
+663 silly gunzTarPerm extractEntry deps/mpg123/src/libmpg123/true.h
+664 silly gunzTarPerm extractEntry deps/mpg123/src/local.c
+665 silly gunzTarPerm extractEntry deps/mpg123/src/local.h
+666 silly gunzTarPerm extractEntry deps/mpg123/src/metaprint.c
+667 silly gunzTarPerm extractEntry deps/mpg123/src/metaprint.h
+668 silly gunzTarPerm extractEntry deps/mpg123/src/Makefile.in
+669 silly gunzTarPerm extractEntry deps/mpg123/src/module.h
+670 silly gunzTarPerm extractEntry deps/mpg123/src/mpg123.c
+671 silly gunzTarPerm extractEntry deps/mpg123/src/mpg123app.h
+672 silly gunzTarPerm extractEntry deps/mpg123/src/output/nas.c
+673 silly gunzTarPerm extractEntry deps/mpg123/src/output/Makefile.am
+674 silly gunzTarPerm extractEntry deps/mpg123/src/output/aix.c
+675 silly gunzTarPerm extractEntry deps/mpg123/src/output/alib.c
+676 silly gunzTarPerm extractEntry deps/mpg123/src/output/alsa.c
+677 silly gunzTarPerm extractEntry deps/mpg123/src/output/arts.c
+678 silly gunzTarPerm extractEntry deps/mpg123/src/output/coreaudio.c
+679 silly gunzTarPerm extractEntry deps/mpg123/src/output/dummy.c
+680 silly gunzTarPerm extractEntry deps/mpg123/src/output/esd.c
+681 silly gunzTarPerm extractEntry deps/mpg123/src/output/hp.c
+682 silly gunzTarPerm extractEntry deps/mpg123/src/output/jack.c
+683 silly gunzTarPerm extractEntry deps/mpg123/src/output/mint.c
+684 silly gunzTarPerm extractEntry deps/mpg123/src/output/Makefile.in
+685 silly gunzTarPerm extractEntry deps/mpg123/src/output/openal.c
+686 silly gunzTarPerm extractEntry deps/mpg123/src/output/os2.c
+687 silly gunzTarPerm extractEntry deps/mpg123/src/output/oss.c
+688 silly gunzTarPerm extractEntry deps/mpg123/src/output/output.h
+689 silly gunzTarPerm extractEntry deps/mpg123/src/output/portaudio.c
+690 silly gunzTarPerm extractEntry deps/mpg123/src/output/pulse.c
+691 silly gunzTarPerm extractEntry deps/mpg123/src/output/sdl.c
+692 silly gunzTarPerm extractEntry deps/mpg123/src/output/sgi.c
+693 silly gunzTarPerm extractEntry deps/mpg123/src/output/sndio.c
+694 silly gunzTarPerm extractEntry deps/mpg123/src/output/sun.c
+695 silly gunzTarPerm extractEntry deps/mpg123/src/output/win32.c
+696 silly gunzTarPerm extractEntry deps/mpg123/src/playlist.c
+697 silly gunzTarPerm extractEntry deps/mpg123/src/playlist.h
+698 silly gunzTarPerm extractEntry deps/mpg123/src/resolver.c
+699 silly gunzTarPerm extractEntry deps/mpg123/src/resolver.h
+700 silly gunzTarPerm extractEntry deps/mpg123/src/sfifo.c
+701 silly gunzTarPerm extractEntry deps/mpg123/src/sfifo.h
+702 silly gunzTarPerm extractEntry deps/mpg123/src/streamdump.c
+703 silly gunzTarPerm extractEntry deps/mpg123/src/streamdump.h
+704 silly gunzTarPerm extractEntry deps/mpg123/src/term.c
+705 silly gunzTarPerm extractEntry deps/mpg123/src/term.h
+706 silly gunzTarPerm extractEntry deps/mpg123/src/tests/noise.c
+707 silly gunzTarPerm extractEntry deps/mpg123/src/tests/plain_id3.c
+708 silly gunzTarPerm extractEntry deps/mpg123/src/tests/seek_accuracy.c
+709 silly gunzTarPerm extractEntry deps/mpg123/src/tests/seek_whence.c
+710 silly gunzTarPerm extractEntry deps/mpg123/src/tests/testtext.h
+711 silly gunzTarPerm extractEntry deps/mpg123/src/tests/text.c
+712 silly gunzTarPerm extractEntry deps/mpg123/src/wav.c
+713 silly gunzTarPerm extractEntry deps/mpg123/src/wavhead.h
+714 silly gunzTarPerm extractEntry deps/mpg123/src/win32_net.c
+715 silly gunzTarPerm extractEntry deps/mpg123/src/win32_support.c
+716 silly gunzTarPerm extractEntry deps/mpg123/src/win32_support.h
+717 silly gunzTarPerm extractEntry deps/mpg123/src/xfermem.c
+718 silly gunzTarPerm extractEntry deps/mpg123/src/xfermem.h
+719 silly gunzTarPerm extractEntry deps/mpg123/test.c
+720 silly gunzTarPerm extractEntry deps/mpg123/windows-builds.sh
+721 silly gunzTarPerm extractEntry binding.gyp
+722 silly gunzTarPerm extractEntry History.md
+723 silly gunzTarPerm extractEntry examples/floatpcm2mp3.js
+724 silly gunzTarPerm extractEntry examples/mp32wav.js
+725 silly gunzTarPerm extractEntry examples/mp3player.js
+726 silly gunzTarPerm extractEntry examples/wav2mp3.js
+727 silly gunzTarPerm extractEntry examples/sample.float.pcm
+728 silly gunzTarPerm extractEntry lib/bindings.js
+729 silly gunzTarPerm extractEntry lib/decoder.js
+730 silly gunzTarPerm extractEntry lib/encoder.js
+731 silly gunzTarPerm extractEntry src/bindings.cc
+732 silly gunzTarPerm extractEntry src/node_lame.cc
+733 silly gunzTarPerm extractEntry src/node_lame.h
+734 silly gunzTarPerm extractEntry src/node_mpg123.cc
+735 silly gunzTarPerm extractEntry src/node_mpg123.h
+736 silly gunzTarPerm extractEntry src/node_pointer.h
+737 silly gunzTarPerm extractEntry .travis.yml
+738 silly gunzTarPerm extractEntry test/decoder.js
+739 silly gunzTarPerm extractEntry test/fixtures/pipershut_lo.mp3
+740 silly lockFile 039977b8-ar-root-NotStu-node-modules-lame tar:///root/NotStu/node_modules/lame
+741 silly lockFile 039977b8-ar-root-NotStu-node-modules-lame tar:///root/NotStu/node_modules/lame
+742 silly lockFile 9c7474e1--root-npm-lame-1-2-4-package-tgz tar:///root/.npm/lame/1.2.4/package.tgz
+743 silly lockFile 9c7474e1--root-npm-lame-1-2-4-package-tgz tar:///root/.npm/lame/1.2.4/package.tgz
+744 info preinstall lame@1.2.4
+745 verbose readDependencies using package.json deps
+746 verbose readDependencies using package.json deps
+747 verbose cache add [ 'readable-stream@^1.0.34', null ]
+748 verbose cache add name=undefined spec="readable-stream@^1.0.34" args=["readable-stream@^1.0.34",null]
+749 verbose parsed url Url {
+749 verbose parsed url   protocol: null,
+749 verbose parsed url   slashes: null,
+749 verbose parsed url   auth: null,
+749 verbose parsed url   host: null,
+749 verbose parsed url   port: null,
+749 verbose parsed url   hostname: null,
+749 verbose parsed url   hash: null,
+749 verbose parsed url   search: null,
+749 verbose parsed url   query: null,
+749 verbose parsed url   pathname: 'readable-stream@%5E1.0.34',
+749 verbose parsed url   path: 'readable-stream@%5E1.0.34',
+749 verbose parsed url   href: 'readable-stream@%5E1.0.34' }
+750 verbose cache add [ 'nan@^2.3.5', null ]
+751 verbose cache add name=undefined spec="nan@^2.3.5" args=["nan@^2.3.5",null]
+752 verbose parsed url Url {
+752 verbose parsed url   protocol: null,
+752 verbose parsed url   slashes: null,
+752 verbose parsed url   auth: null,
+752 verbose parsed url   host: null,
+752 verbose parsed url   port: null,
+752 verbose parsed url   hostname: null,
+752 verbose parsed url   hash: null,
+752 verbose parsed url   search: null,
+752 verbose parsed url   query: null,
+752 verbose parsed url   pathname: 'nan@%5E2.3.5',
+752 verbose parsed url   path: 'nan@%5E2.3.5',
+752 verbose parsed url   href: 'nan@%5E2.3.5' }
+753 verbose cache add name="readable-stream" spec="^1.0.34" args=["readable-stream","^1.0.34"]
+754 verbose parsed url Url {
+754 verbose parsed url   protocol: null,
+754 verbose parsed url   slashes: null,
+754 verbose parsed url   auth: null,
+754 verbose parsed url   host: null,
+754 verbose parsed url   port: null,
+754 verbose parsed url   hostname: null,
+754 verbose parsed url   hash: null,
+754 verbose parsed url   search: null,
+754 verbose parsed url   query: null,
+754 verbose parsed url   pathname: '%5E1.0.34',
+754 verbose parsed url   path: '%5E1.0.34',
+754 verbose parsed url   href: '%5E1.0.34' }
+755 verbose addNamed [ 'readable-stream', '^1.0.34' ]
+756 verbose addNamed [ null, '>=1.0.34 <2.0.0' ]
+757 silly lockFile 2390256a-readable-stream-1-0-34 readable-stream@^1.0.34
+758 verbose lock readable-stream@^1.0.34 /root/.npm/2390256a-readable-stream-1-0-34.lock
+759 verbose cache add [ 'bindings@^1.2.1', null ]
+760 verbose cache add name=undefined spec="bindings@^1.2.1" args=["bindings@^1.2.1",null]
+761 verbose parsed url Url {
+761 verbose parsed url   protocol: null,
+761 verbose parsed url   slashes: null,
+761 verbose parsed url   auth: null,
+761 verbose parsed url   host: null,
+761 verbose parsed url   port: null,
+761 verbose parsed url   hostname: null,
+761 verbose parsed url   hash: null,
+761 verbose parsed url   search: null,
+761 verbose parsed url   query: null,
+761 verbose parsed url   pathname: 'bindings@%5E1.2.1',
+761 verbose parsed url   path: 'bindings@%5E1.2.1',
+761 verbose parsed url   href: 'bindings@%5E1.2.1' }
+762 verbose cache add [ 'debug@^2.2.0', null ]
+763 verbose cache add name=undefined spec="debug@^2.2.0" args=["debug@^2.2.0",null]
+764 verbose parsed url Url {
+764 verbose parsed url   protocol: null,
+764 verbose parsed url   slashes: null,
+764 verbose parsed url   auth: null,
+764 verbose parsed url   host: null,
+764 verbose parsed url   port: null,
+764 verbose parsed url   hostname: null,
+764 verbose parsed url   hash: null,
+764 verbose parsed url   search: null,
+764 verbose parsed url   query: null,
+764 verbose parsed url   pathname: 'debug@%5E2.2.0',
+764 verbose parsed url   path: 'debug@%5E2.2.0',
+764 verbose parsed url   href: 'debug@%5E2.2.0' }
+765 verbose cache add name="nan" spec="^2.3.5" args=["nan","^2.3.5"]
+766 verbose parsed url Url {
+766 verbose parsed url   protocol: null,
+766 verbose parsed url   slashes: null,
+766 verbose parsed url   auth: null,
+766 verbose parsed url   host: null,
+766 verbose parsed url   port: null,
+766 verbose parsed url   hostname: null,
+766 verbose parsed url   hash: null,
+766 verbose parsed url   search: null,
+766 verbose parsed url   query: null,
+766 verbose parsed url   pathname: '%5E2.3.5',
+766 verbose parsed url   path: '%5E2.3.5',
+766 verbose parsed url   href: '%5E2.3.5' }
+767 verbose addNamed [ 'nan', '^2.3.5' ]
+768 verbose addNamed [ null, '>=2.3.5 <3.0.0' ]
+769 silly lockFile f0833415-nan-2-3-5 nan@^2.3.5
+770 verbose lock nan@^2.3.5 /root/.npm/f0833415-nan-2-3-5.lock
+771 verbose cache add name="bindings" spec="^1.2.1" args=["bindings","^1.2.1"]
+772 verbose parsed url Url {
+772 verbose parsed url   protocol: null,
+772 verbose parsed url   slashes: null,
+772 verbose parsed url   auth: null,
+772 verbose parsed url   host: null,
+772 verbose parsed url   port: null,
+772 verbose parsed url   hostname: null,
+772 verbose parsed url   hash: null,
+772 verbose parsed url   search: null,
+772 verbose parsed url   query: null,
+772 verbose parsed url   pathname: '%5E1.2.1',
+772 verbose parsed url   path: '%5E1.2.1',
+772 verbose parsed url   href: '%5E1.2.1' }
+773 verbose addNamed [ 'bindings', '^1.2.1' ]
+774 verbose addNamed [ null, '>=1.2.1 <2.0.0' ]
+775 silly lockFile b1a79860-bindings-1-2-1 bindings@^1.2.1
+776 verbose lock bindings@^1.2.1 /root/.npm/b1a79860-bindings-1-2-1.lock
+777 verbose cache add name="debug" spec="^2.2.0" args=["debug","^2.2.0"]
+778 verbose parsed url Url {
+778 verbose parsed url   protocol: null,
+778 verbose parsed url   slashes: null,
+778 verbose parsed url   auth: null,
+778 verbose parsed url   host: null,
+778 verbose parsed url   port: null,
+778 verbose parsed url   hostname: null,
+778 verbose parsed url   hash: null,
+778 verbose parsed url   search: null,
+778 verbose parsed url   query: null,
+778 verbose parsed url   pathname: '%5E2.2.0',
+778 verbose parsed url   path: '%5E2.2.0',
+778 verbose parsed url   href: '%5E2.2.0' }
+779 verbose addNamed [ 'debug', '^2.2.0' ]
+780 verbose addNamed [ null, '>=2.2.0 <3.0.0' ]
+781 silly lockFile 862c00aa-debug-2-2-0 debug@^2.2.0
+782 verbose lock debug@^2.2.0 /root/.npm/862c00aa-debug-2-2-0.lock
+783 silly addNameRange { name: 'readable-stream',
+783 silly addNameRange   range: '>=1.0.34 <2.0.0',
+783 silly addNameRange   hasData: false }
+784 silly addNameRange { name: 'nan', range: '>=2.3.5 <3.0.0', hasData: false }
+785 silly addNameRange { name: 'bindings', range: '>=1.2.1 <2.0.0', hasData: false }
+786 silly addNameRange { name: 'debug', range: '>=2.2.0 <3.0.0', hasData: false }
+787 verbose request where is /readable-stream
+788 verbose request registry https://registry.npmjs.org/
+789 verbose url raw /readable-stream
+790 verbose url resolving [ 'https://registry.npmjs.org/', './readable-stream' ]
+791 verbose url resolved https://registry.npmjs.org/readable-stream
+792 verbose request where is https://registry.npmjs.org/readable-stream
+793 info trying registry request attempt 1 at 12:08:02 AM
+794 verbose etag W/"599ce2a6-1984d"
+795 http GET https://registry.npmjs.org/readable-stream
+796 verbose request where is /bindings
+797 verbose request registry https://registry.npmjs.org/
+798 verbose url raw /bindings
+799 verbose url resolving [ 'https://registry.npmjs.org/', './bindings' ]
+800 verbose url resolved https://registry.npmjs.org/bindings
+801 verbose request where is https://registry.npmjs.org/bindings
+802 info trying registry request attempt 1 at 12:08:02 AM
+803 verbose etag W/"59764778-4c05"
+804 http GET https://registry.npmjs.org/bindings
+805 verbose request where is /nan
+806 verbose request registry https://registry.npmjs.org/
+807 verbose url raw /nan
+808 verbose url resolving [ 'https://registry.npmjs.org/', './nan' ]
+809 verbose url resolved https://registry.npmjs.org/nan
+810 verbose request where is https://registry.npmjs.org/nan
+811 info trying registry request attempt 1 at 12:08:02 AM
+812 verbose etag W/"597a1ce5-1fa1a"
+813 http GET https://registry.npmjs.org/nan
+814 verbose request where is /debug
+815 verbose request registry https://registry.npmjs.org/
+816 verbose url raw /debug
+817 verbose url resolving [ 'https://registry.npmjs.org/', './debug' ]
+818 verbose url resolved https://registry.npmjs.org/debug
+819 verbose request where is https://registry.npmjs.org/debug
+820 info trying registry request attempt 1 at 12:08:02 AM
+821 verbose etag W/"59a0ee4b-17d6f"
+822 http GET https://registry.npmjs.org/debug
+823 http 304 https://registry.npmjs.org/readable-stream
+824 silly registry.get cb [ 304,
+824 silly registry.get   { date: 'Sat, 26 Aug 2017 04:08:09 GMT',
+824 silly registry.get     via: '1.1 varnish',
+824 silly registry.get     'cache-control': 'max-age=300',
+824 silly registry.get     etag: 'W/"599ce2a6-1984d"',
+824 silly registry.get     age: '258',
+824 silly registry.get     connection: 'close',
+824 silly registry.get     'x-served-by': 'cache-jfk8130-JFK',
+824 silly registry.get     'x-cache': 'HIT',
+824 silly registry.get     'x-cache-hits': '413',
+824 silly registry.get     'x-timer': 'S1503720489.306080,VS0,VE0',
+824 silly registry.get     vary: 'Accept-Encoding, Accept' } ]
+825 verbose etag https://registry.npmjs.org/readable-stream from cache
+826 http 304 https://registry.npmjs.org/bindings
+827 silly registry.get cb [ 304,
+827 silly registry.get   { date: 'Sat, 26 Aug 2017 04:08:09 GMT',
+827 silly registry.get     via: '1.1 varnish',
+827 silly registry.get     'cache-control': 'max-age=300',
+827 silly registry.get     etag: 'W/"59764778-4c05"',
+827 silly registry.get     age: '63',
+827 silly registry.get     connection: 'close',
+827 silly registry.get     'x-served-by': 'cache-jfk8133-JFK',
+827 silly registry.get     'x-cache': 'HIT',
+827 silly registry.get     'x-cache-hits': '2',
+827 silly registry.get     'x-timer': 'S1503720489.313974,VS0,VE0',
+827 silly registry.get     vary: 'Accept-Encoding, Accept' } ]
+828 verbose etag https://registry.npmjs.org/bindings from cache
+829 silly addNameRange number 2 { name: 'readable-stream',
+829 silly addNameRange   range: '>=1.0.34 <2.0.0',
+829 silly addNameRange   hasData: true }
+830 silly addNameRange versions [ 'readable-stream',
+830 silly addNameRange   [ '0.0.1',
+830 silly addNameRange     '0.0.2',
+830 silly addNameRange     '0.0.3',
+830 silly addNameRange     '0.0.4',
+830 silly addNameRange     '0.1.0',
+830 silly addNameRange     '0.2.0',
+830 silly addNameRange     '0.3.0',
+830 silly addNameRange     '0.3.1',
+830 silly addNameRange     '1.0.0',
+830 silly addNameRange     '1.0.1',
+830 silly addNameRange     '1.0.2',
+830 silly addNameRange     '1.0.15',
+830 silly addNameRange     '1.0.17',
+830 silly addNameRange     '1.1.7',
+830 silly addNameRange     '1.1.8',
+830 silly addNameRange     '1.1.9',
+830 silly addNameRange     '1.0.24',
+830 silly addNameRange     '1.0.25',
+830 silly addNameRange     '1.1.10',
+830 silly addNameRange     '1.0.25-1',
+830 silly addNameRange     '1.1.11',
+830 silly addNameRange     '1.0.26',
+830 silly addNameRange     '1.0.26-1',
+830 silly addNameRange     '1.1.11-1',
+830 silly addNameRange     '1.0.26-2',
+830 silly addNameRange     '1.1.12',
+830 silly addNameRange     '1.0.26-3',
+830 silly addNameRange     '1.0.26-4',
+830 silly addNameRange     '1.1.12-1',
+830 silly addNameRange     '1.0.27-1',
+830 silly addNameRange     '1.1.13-1',
+830 silly addNameRange     '1.0.31',
+830 silly addNameRange     '1.1.13',
+830 silly addNameRange     '1.0.32',
+830 silly addNameRange     '1.0.32-1',
+830 silly addNameRange     '1.0.33-1',
+830 silly addNameRange     '1.0.33-2',
+830 silly addNameRange     '1.0.33',
+830 silly addNameRange     '2.0.0',
+830 silly addNameRange     '2.0.1',
+830 silly addNameRange     '2.0.2',
+830 silly addNameRange     '2.0.3',
+830 silly addNameRange     '2.0.4',
+830 silly addNameRange     '2.0.5',
+830 silly addNameRange     '2.0.6',
+830 silly addNameRange     '1.0.34',
+830 silly addNameRange     '1.1.14',
+830 silly addNameRange     '2.1.0',
+830 silly addNameRange     '2.1.1',
+830 silly addNameRange     '2.1.2',
+830 silly addNameRange     '2.1.3',
+830 silly addNameRange     '2.1.4',
+830 silly addNameRange     '2.1.5',
+830 silly addNameRange     '2.2.0',
+830 silly addNameRange     '2.2.1',
+830 silly addNameRange     '2.2.2',
+830 silly addNameRange     '2.2.3',
+830 silly addNameRange     '2.2.4',
+830 silly addNameRange     '2.2.5',
+830 silly addNameRange     '2.2.6',
+830 silly addNameRange     '2.2.7',
+830 silly addNameRange     '2.2.8',
+830 silly addNameRange     '2.2.9',
+830 silly addNameRange     '2.2.10',
+830 silly addNameRange     '2.2.11',
+830 silly addNameRange     '2.3.0',
+830 silly addNameRange     '2.3.1',
+830 silly addNameRange     '2.3.2',
+830 silly addNameRange     '2.3.3' ] ]
+831 verbose addNamed [ 'readable-stream', '1.1.14' ]
+832 verbose addNamed [ '1.1.14', '1.1.14' ]
+833 silly lockFile 5b773c36-readable-stream-1-1-14 readable-stream@1.1.14
+834 verbose lock readable-stream@1.1.14 /root/.npm/5b773c36-readable-stream-1-1-14.lock
+835 http 304 https://registry.npmjs.org/nan
+836 silly registry.get cb [ 304,
+836 silly registry.get   { date: 'Sat, 26 Aug 2017 04:08:09 GMT',
+836 silly registry.get     via: '1.1 varnish',
+836 silly registry.get     'cache-control': 'max-age=300',
+836 silly registry.get     etag: 'W/"597a1ce5-1fa1a"',
+836 silly registry.get     age: '59',
+836 silly registry.get     connection: 'close',
+836 silly registry.get     'x-served-by': 'cache-jfk8141-JFK',
+836 silly registry.get     'x-cache': 'HIT',
+836 silly registry.get     'x-cache-hits': '3',
+836 silly registry.get     'x-timer': 'S1503720489.333993,VS0,VE0',
+836 silly registry.get     vary: 'Accept-Encoding, Accept' } ]
+837 verbose etag https://registry.npmjs.org/nan from cache
+838 silly addNameRange number 2 { name: 'bindings', range: '>=1.2.1 <2.0.0', hasData: true }
+839 silly addNameRange versions [ 'bindings',
+839 silly addNameRange   [ '0.0.1',
+839 silly addNameRange     '0.1.0',
+839 silly addNameRange     '0.1.1',
+839 silly addNameRange     '0.2.0',
+839 silly addNameRange     '0.2.1',
+839 silly addNameRange     '0.2.2',
+839 silly addNameRange     '0.2.3',
+839 silly addNameRange     '0.2.4',
+839 silly addNameRange     '0.3.0',
+839 silly addNameRange     '0.4.0',
+839 silly addNameRange     '1.0.0',
+839 silly addNameRange     '1.1.0',
+839 silly addNameRange     '1.1.1',
+839 silly addNameRange     '1.2.0',
+839 silly addNameRange     '1.2.1',
+839 silly addNameRange     '1.3.0' ] ]
+840 verbose addNamed [ 'bindings', '1.3.0' ]
+841 verbose addNamed [ '1.3.0', '1.3.0' ]
+842 silly lockFile e7c26552-bindings-1-3-0 bindings@1.3.0
+843 verbose lock bindings@1.3.0 /root/.npm/e7c26552-bindings-1-3-0.lock
+844 silly lockFile 5b773c36-readable-stream-1-1-14 readable-stream@1.1.14
+845 silly lockFile 5b773c36-readable-stream-1-1-14 readable-stream@1.1.14
+846 silly lockFile 2390256a-readable-stream-1-0-34 readable-stream@^1.0.34
+847 silly lockFile 2390256a-readable-stream-1-0-34 readable-stream@^1.0.34
+848 silly lockFile e7c26552-bindings-1-3-0 bindings@1.3.0
+849 silly lockFile e7c26552-bindings-1-3-0 bindings@1.3.0
+850 silly addNameRange number 2 { name: 'nan', range: '>=2.3.5 <3.0.0', hasData: true }
+851 silly addNameRange versions [ 'nan',
+851 silly addNameRange   [ '0.3.0-wip',
+851 silly addNameRange     '0.3.0-wip2',
+851 silly addNameRange     '0.3.0',
+851 silly addNameRange     '0.3.1',
+851 silly addNameRange     '0.3.2',
+851 silly addNameRange     '0.4.0',
+851 silly addNameRange     '0.4.1',
+851 silly addNameRange     '0.4.2',
+851 silly addNameRange     '0.4.3',
+851 silly addNameRange     '0.4.4',
+851 silly addNameRange     '0.5.0',
+851 silly addNameRange     '0.5.1',
+851 silly addNameRange     '0.5.2',
+851 silly addNameRange     '0.6.0',
+851 silly addNameRange     '0.7.0',
+851 silly addNameRange     '0.7.1',
+851 silly addNameRange     '0.8.0',
+851 silly addNameRange     '1.0.0',
+851 silly addNameRange     '1.1.0',
+851 silly addNameRange     '1.1.1',
+851 silly addNameRange     '1.1.2',
+851 silly addNameRange     '1.2.0',
+851 silly addNameRange     '1.3.0',
+851 silly addNameRange     '1.4.0',
+851 silly addNameRange     '1.4.1',
+851 silly addNameRange     '1.5.0',
+851 silly addNameRange     '1.4.2',
+851 silly addNameRange     '1.4.3',
+851 silly addNameRange     '1.5.1',
+851 silly addNameRange     '1.5.2',
+851 silly addNameRange     '1.6.0',
+851 silly addNameRange     '1.5.3',
+851 silly addNameRange     '1.6.1',
+851 silly addNameRange     '1.6.2',
+851 silly addNameRange     '1.7.0',
+851 silly addNameRange     '1.8.0',
+851 silly addNameRange     '1.8.1',
+851 silly addNameRange     '1.8.2',
+851 silly addNameRange     '1.8.3',
+851 silly addNameRange     '1.8.4',
+851 silly addNameRange     '1.9.0',
+851 silly addNameRange     '2.0.0',
+851 silly addNameRange     '2.0.1',
+851 silly addNameRange     '2.0.2',
+851 silly addNameRange     '2.0.3',
+851 silly addNameRange     '2.0.4',
+851 silly addNameRange     '2.0.5',
+851 silly addNameRange     '2.0.6',
+851 silly addNameRange     '2.0.7',
+851 silly addNameRange     '2.0.8',
+851 silly addNameRange     '2.0.9',
+851 silly addNameRange     '2.1.0',
+851 silly addNameRange     '2.2.0',
+851 silly addNameRange     '2.2.1',
+851 silly addNameRange     '2.3.0',
+851 silly addNameRange     '2.3.1',
+851 silly addNameRange     '2.3.2',
+851 silly addNameRange     '2.3.3',
+851 silly addNameRange     '2.3.4',
+851 silly addNameRange     '2.3.5',
+851 silly addNameRange     '2.4.0',
+851 silly addNameRange     '2.5.0',
+851 silly addNameRange     '2.5.1',
+851 silly addNameRange     '2.6.0',
+851 silly addNameRange     '2.6.1',
+851 silly addNameRange     '2.6.2' ] ]
+852 verbose addNamed [ 'nan', '2.6.2' ]
+853 verbose addNamed [ '2.6.2', '2.6.2' ]
+854 silly lockFile 49e5e6ab-nan-2-6-2 nan@2.6.2
+855 verbose lock nan@2.6.2 /root/.npm/49e5e6ab-nan-2-6-2.lock
+856 silly lockFile b1a79860-bindings-1-2-1 bindings@^1.2.1
+857 silly lockFile b1a79860-bindings-1-2-1 bindings@^1.2.1
+858 http 304 https://registry.npmjs.org/debug
+859 silly registry.get cb [ 304,
+859 silly registry.get   { date: 'Sat, 26 Aug 2017 04:08:09 GMT',
+859 silly registry.get     via: '1.1 varnish',
+859 silly registry.get     'cache-control': 'max-age=300',
+859 silly registry.get     etag: 'W/"59a0ee4b-17d6f"',
+859 silly registry.get     age: '295',
+859 silly registry.get     connection: 'close',
+859 silly registry.get     'x-served-by': 'cache-jfk8123-JFK',
+859 silly registry.get     'x-cache': 'HIT',
+859 silly registry.get     'x-cache-hits': '15',
+859 silly registry.get     'x-timer': 'S1503720489.374147,VS0,VE0',
+859 silly registry.get     vary: 'Accept-Encoding, Accept' } ]
+860 verbose etag https://registry.npmjs.org/debug from cache
+861 silly lockFile 49e5e6ab-nan-2-6-2 nan@2.6.2
+862 silly lockFile 49e5e6ab-nan-2-6-2 nan@2.6.2
+863 silly addNameRange number 2 { name: 'debug', range: '>=2.2.0 <3.0.0', hasData: true }
+864 silly addNameRange versions [ 'debug',
+864 silly addNameRange   [ '0.0.1',
+864 silly addNameRange     '0.1.0',
+864 silly addNameRange     '0.2.0',
+864 silly addNameRange     '0.3.0',
+864 silly addNameRange     '0.4.0',
+864 silly addNameRange     '0.4.1',
+864 silly addNameRange     '0.5.0',
+864 silly addNameRange     '0.6.0',
+864 silly addNameRange     '0.7.0',
+864 silly addNameRange     '0.7.1',
+864 silly addNameRange     '0.7.2',
+864 silly addNameRange     '0.7.3',
+864 silly addNameRange     '0.7.4',
+864 silly addNameRange     '0.8.0',
+864 silly addNameRange     '0.8.1',
+864 silly addNameRange     '1.0.0',
+864 silly addNameRange     '1.0.1',
+864 silly addNameRange     '1.0.2',
+864 silly addNameRange     '1.0.3',
+864 silly addNameRange     '1.0.4',
+864 silly addNameRange     '2.0.0',
+864 silly addNameRange     '2.1.0',
+864 silly addNameRange     '2.1.1',
+864 silly addNameRange     '2.1.2',
+864 silly addNameRange     '2.1.3',
+864 silly addNameRange     '2.2.0',
+864 silly addNameRange     '2.3.0',
+864 silly addNameRange     '2.3.1',
+864 silly addNameRange     '2.3.2',
+864 silly addNameRange     '2.3.3',
+864 silly addNameRange     '2.4.0',
+864 silly addNameRange     '2.4.1',
+864 silly addNameRange     '2.4.2',
+864 silly addNameRange     '2.4.3',
+864 silly addNameRange     '2.4.4',
+864 silly addNameRange     '2.4.5',
+864 silly addNameRange     '2.5.0',
+864 silly addNameRange     '2.5.1',
+864 silly addNameRange     '2.5.2',
+864 silly addNameRange     '2.6.0',
+864 silly addNameRange     '2.6.1',
+864 silly addNameRange     '2.6.2',
+864 silly addNameRange     '2.6.3',
+864 silly addNameRange     '2.6.4',
+864 silly addNameRange     '2.6.5',
+864 silly addNameRange     '2.6.6',
+864 silly addNameRange     '2.6.7',
+864 silly addNameRange     '2.6.8',
+864 silly addNameRange     '1.0.5',
+864 silly addNameRange     '3.0.0',
+864 silly addNameRange     '3.0.1' ] ]
+865 verbose addNamed [ 'debug', '2.6.8' ]
+866 verbose addNamed [ '2.6.8', '2.6.8' ]
+867 silly lockFile 5ed2836e-debug-2-6-8 debug@2.6.8
+868 verbose lock debug@2.6.8 /root/.npm/5ed2836e-debug-2-6-8.lock
+869 silly lockFile f0833415-nan-2-3-5 nan@^2.3.5
+870 silly lockFile f0833415-nan-2-3-5 nan@^2.3.5
+871 silly lockFile 5ed2836e-debug-2-6-8 debug@2.6.8
+872 silly lockFile 5ed2836e-debug-2-6-8 debug@2.6.8
+873 silly lockFile 862c00aa-debug-2-2-0 debug@^2.2.0
+874 silly lockFile 862c00aa-debug-2-2-0 debug@^2.2.0
+875 silly resolved [ { name: 'readable-stream',
+875 silly resolved     version: '1.1.14',
+875 silly resolved     description: 'Streams3, a user-land copy of the stream library from Node.js v0.11.x',
+875 silly resolved     main: 'readable.js',
+875 silly resolved     dependencies:
+875 silly resolved      { 'core-util-is': '~1.0.0',
+875 silly resolved        isarray: '0.0.1',
+875 silly resolved        string_decoder: '~0.10.x',
+875 silly resolved        inherits: '~2.0.1' },
+875 silly resolved     devDependencies: { tap: '~0.2.6' },
+875 silly resolved     scripts: { test: 'tap test/simple/*.js' },
+875 silly resolved     repository:
+875 silly resolved      { type: 'git',
+875 silly resolved        url: 'git://github.com/isaacs/readable-stream.git' },
+875 silly resolved     keywords: [ 'readable', 'stream', 'pipe' ],
+875 silly resolved     browser: { util: false },
+875 silly resolved     author:
+875 silly resolved      { name: 'Isaac Z. Schlueter',
+875 silly resolved        email: 'i@izs.me',
+875 silly resolved        url: 'http://blog.izs.me/' },
+875 silly resolved     license: 'MIT',
+875 silly resolved     gitHead: '52550840cb1d6e8a98ef9a909a4bea360bc6f7da',
+875 silly resolved     bugs: { url: 'https://github.com/isaacs/readable-stream/issues' },
+875 silly resolved     _id: 'readable-stream@1.1.14',
+875 silly resolved     _shasum: '7cf4c54ef648e3813084c636dd2079e166c081d9',
+875 silly resolved     _from: 'readable-stream@^1.0.34',
+875 silly resolved     _npmVersion: '3.8.3',
+875 silly resolved     _nodeVersion: '5.10.1',
+875 silly resolved     _npmUser: { name: 'cwmma', email: 'calvin.metcalf@gmail.com' },
+875 silly resolved     dist:
+875 silly resolved      { shasum: '7cf4c54ef648e3813084c636dd2079e166c081d9',
+875 silly resolved        tarball: 'https://registry.npmjs.org/readable-stream/-/readable-stream-1.1.14.tgz' },
+875 silly resolved     maintainers: [ [Object], [Object], [Object], [Object] ],
+875 silly resolved     _npmOperationalInternal:
+875 silly resolved      { host: 'packages-16-east.internal.npmjs.com',
+875 silly resolved        tmp: 'tmp/readable-stream-1.1.14.tgz_1460563293219_0.5682175166439265' },
+875 silly resolved     directories: {},
+875 silly resolved     _resolved: 'https://registry.npmjs.org/readable-stream/-/readable-stream-1.1.14.tgz',
+875 silly resolved     readme: 'ERROR: No README data found!',
+875 silly resolved     homepage: 'https://github.com/isaacs/readable-stream#readme' },
+875 silly resolved   { name: 'bindings',
+875 silly resolved     description: 'Helper module for loading your native module\'s .node file',
+875 silly resolved     keywords: [ 'native', 'addon', 'bindings', 'gyp', 'waf', 'c', 'c++' ],
+875 silly resolved     version: '1.3.0',
+875 silly resolved     author:
+875 silly resolved      { name: 'Nathan Rajlich',
+875 silly resolved        email: 'nathan@tootallnate.net',
+875 silly resolved        url: 'http://tootallnate.net' },
+875 silly resolved     repository:
+875 silly resolved      { type: 'git',
+875 silly resolved        url: 'git://github.com/TooTallNate/node-bindings.git' },
+875 silly resolved     main: './bindings.js',
+875 silly resolved     bugs: { url: 'https://github.com/TooTallNate/node-bindings/issues' },
+875 silly resolved     homepage: 'https://github.com/TooTallNate/node-bindings',
+875 silly resolved     license: 'MIT',
+875 silly resolved     gitHead: '7fd065ee85386ad3d074d2506e03abe8f9b1588b',
+875 silly resolved     _id: 'bindings@1.3.0',
+875 silly resolved     _npmVersion: '5.0.3',
+875 silly resolved     _nodeVersion: '8.1.3',
+875 silly resolved     _npmUser: { name: 'tootallnate', email: 'nathan@tootallnate.net' },
+875 silly resolved     dist:
+875 silly resolved      { integrity: 'sha512-DpLh5EzMR2kzvX1KIlVC0VkC3iZtHKTgdtZ0a3pglBZdaQFjt5S9g9xd1lE+YvXyfd6mtCeRnrUfOLYiTMlNSw==',
+875 silly resolved        shasum: 'b346f6ecf6a95f5a815c5839fc7cdb22502f1ed7',
+875 silly resolved        tarball: 'https://registry.npmjs.org/bindings/-/bindings-1.3.0.tgz' },
+875 silly resolved     maintainers: [ [Object] ],
+875 silly resolved     _npmOperationalInternal:
+875 silly resolved      { host: 's3://npm-registry-packages',
+875 silly resolved        tmp: 'tmp/bindings-1.3.0.tgz_1500923768710_0.3334669852629304' },
+875 silly resolved     directories: {},
+875 silly resolved     _shasum: 'b346f6ecf6a95f5a815c5839fc7cdb22502f1ed7',
+875 silly resolved     _from: 'bindings@^1.2.1',
+875 silly resolved     _resolved: 'https://registry.npmjs.org/bindings/-/bindings-1.3.0.tgz',
+875 silly resolved     readme: 'ERROR: No README data found!' },
+875 silly resolved   { name: 'nan',
+875 silly resolved     version: '2.6.2',
+875 silly resolved     description: 'Native Abstractions for Node.js: C++ header for Node 0.8 -> 7 compatibility',
+875 silly resolved     main: 'include_dirs.js',
+875 silly resolved     repository: { type: 'git', url: 'git://github.com/nodejs/nan.git' },
+875 silly resolved     scripts:
+875 silly resolved      { test: 'tap --gc --stderr test/js/*-test.js',
+875 silly resolved        'rebuild-tests': 'node-gyp rebuild --msvs_version=2013 --directory test',
+875 silly resolved        docs: 'doc/.build.sh' },
+875 silly resolved     contributors:
+875 silly resolved      [ [Object],
+875 silly resolved        [Object],
+875 silly resolved        [Object],
+875 silly resolved        [Object],
+875 silly resolved        [Object],
+875 silly resolved        [Object],
+875 silly resolved        [Object],
+875 silly resolved        [Object] ],
+875 silly resolved     devDependencies:
+875 silly resolved      { bindings: '~1.2.1',
+875 silly resolved        commander: '^2.8.1',
+875 silly resolved        glob: '^5.0.14',
+875 silly resolved        'node-gyp': '~3.0.1',
+875 silly resolved        'readable-stream': '^2.1.4',
+875 silly resolved        tap: '~0.7.1',
+875 silly resolved        xtend: '~4.0.0' },
+875 silly resolved     license: 'MIT',
+875 silly resolved     gitHead: 'f0b2f64c1e5317888f2e12fdefb2f105e7018552',
+875 silly resolved     bugs: { url: 'https://github.com/nodejs/nan/issues' },
+875 silly resolved     homepage: 'https://github.com/nodejs/nan#readme',
+875 silly resolved     _id: 'nan@2.6.2',
+875 silly resolved     _shasum: 'e4ff34e6c95fdfb5aecc08de6596f43605a7db45',
+875 silly resolved     _from: 'nan@^2.3.5',
+875 silly resolved     _npmVersion: '4.1.2',
+875 silly resolved     _nodeVersion: '7.5.0',
+875 silly resolved     _npmUser: { name: 'kkoopa', email: 'bbyholm@abo.fi' },
+875 silly resolved     dist:
+875 silly resolved      { shasum: 'e4ff34e6c95fdfb5aecc08de6596f43605a7db45',
+875 silly resolved        tarball: 'https://registry.npmjs.org/nan/-/nan-2.6.2.tgz' },
+875 silly resolved     maintainers: [ [Object], [Object] ],
+875 silly resolved     _npmOperationalInternal:
+875 silly resolved      { host: 'packages-12-west.internal.npmjs.com',
+875 silly resolved        tmp: 'tmp/nan-2.6.2.tgz_1492029516320_0.2352329883724451' },
+875 silly resolved     directories: {},
+875 silly resolved     _resolved: 'https://registry.npmjs.org/nan/-/nan-2.6.2.tgz',
+875 silly resolved     readme: 'ERROR: No README data found!' },
+875 silly resolved   { name: 'debug',
+875 silly resolved     version: '2.6.8',
+875 silly resolved     repository: { type: 'git', url: 'git://github.com/visionmedia/debug.git' },
+875 silly resolved     description: 'small debugging utility',
+875 silly resolved     keywords: [ 'debug', 'log', 'debugger' ],
+875 silly resolved     author: { name: 'TJ Holowaychuk', email: 'tj@vision-media.ca' },
+875 silly resolved     contributors: [ [Object], [Object] ],
+875 silly resolved     license: 'MIT',
+875 silly resolved     dependencies: { ms: '2.0.0' },
+875 silly resolved     devDependencies:
+875 silly resolved      { browserify: '9.0.3',
+875 silly resolved        chai: '^3.5.0',
+875 silly resolved        concurrently: '^3.1.0',
+875 silly resolved        coveralls: '^2.11.15',
+875 silly resolved        eslint: '^3.12.1',
+875 silly resolved        istanbul: '^0.4.5',
+875 silly resolved        karma: '^1.3.0',
+875 silly resolved        'karma-chai': '^0.1.0',
+875 silly resolved        'karma-mocha': '^1.3.0',
+875 silly resolved        'karma-phantomjs-launcher': '^1.0.2',
+875 silly resolved        'karma-sinon': '^1.0.5',
+875 silly resolved        mocha: '^3.2.0',
+875 silly resolved        'mocha-lcov-reporter': '^1.2.0',
+875 silly resolved        rimraf: '^2.5.4',
+875 silly resolved        sinon: '^1.17.6',
+875 silly resolved        'sinon-chai': '^2.8.0' },
+875 silly resolved     main: './src/index.js',
+875 silly resolved     browser: './src/browser.js',
+875 silly resolved     component: { scripts: [Object] },
+875 silly resolved     gitHead: '52e1f21284322f167839e5d3a60f635c8b2dc842',
+875 silly resolved     bugs: { url: 'https://github.com/visionmedia/debug/issues' },
+875 silly resolved     homepage: 'https://github.com/visionmedia/debug#readme',
+875 silly resolved     _id: 'debug@2.6.8',
+875 silly resolved     scripts: {},
+875 silly resolved     _shasum: 'e731531ca2ede27d188222427da17821d68ff4fc',
+875 silly resolved     _from: 'debug@^2.2.0',
+875 silly resolved     _npmVersion: '4.2.0',
+875 silly resolved     _nodeVersion: '7.10.0',
+875 silly resolved     _npmUser: { name: 'tootallnate', email: 'nathan@tootallnate.net' },
+875 silly resolved     dist:
+875 silly resolved      { shasum: 'e731531ca2ede27d188222427da17821d68ff4fc',
+875 silly resolved        tarball: 'https://registry.npmjs.org/debug/-/debug-2.6.8.tgz' },
+875 silly resolved     maintainers: [ [Object] ],
+875 silly resolved     _npmOperationalInternal:
+875 silly resolved      { host: 'packages-12-west.internal.npmjs.com',
+875 silly resolved        tmp: 'tmp/debug-2.6.8.tgz_1495138020906_0.5965513256378472' },
+875 silly resolved     directories: {},
+875 silly resolved     _resolved: 'https://registry.npmjs.org/debug/-/debug-2.6.8.tgz',
+875 silly resolved     readme: 'ERROR: No README data found!' } ]
+876 info install readable-stream@1.1.14 into /root/NotStu/node_modules/lame
+877 info install bindings@1.3.0 into /root/NotStu/node_modules/lame
+878 info install nan@2.6.2 into /root/NotStu/node_modules/lame
+879 info install debug@2.6.8 into /root/NotStu/node_modules/lame
+880 info installOne readable-stream@1.1.14
+881 info installOne bindings@1.3.0
+882 info installOne nan@2.6.2
+883 info installOne debug@2.6.8
+884 verbose node_modules/lame/node_modules/readable-stream unbuild
+885 verbose node_modules/lame/node_modules/bindings unbuild
+886 verbose node_modules/lame/node_modules/nan unbuild
+887 verbose node_modules/lame/node_modules/debug unbuild
+888 verbose tar unpack /root/.npm/readable-stream/1.1.14/package.tgz
+889 silly lockFile 49a22008-ame-node-modules-readable-stream tar:///root/NotStu/node_modules/lame/node_modules/readable-stream
+890 verbose lock tar:///root/NotStu/node_modules/lame/node_modules/readable-stream /root/.npm/49a22008-ame-node-modules-readable-stream.lock
+891 silly lockFile 6e129eba-adable-stream-1-1-14-package-tgz tar:///root/.npm/readable-stream/1.1.14/package.tgz
+892 verbose lock tar:///root/.npm/readable-stream/1.1.14/package.tgz /root/.npm/6e129eba-adable-stream-1-1-14-package-tgz.lock
+893 verbose tar unpack /root/.npm/bindings/1.3.0/package.tgz
+894 silly lockFile 71647957-dules-lame-node-modules-bindings tar:///root/NotStu/node_modules/lame/node_modules/bindings
+895 verbose lock tar:///root/NotStu/node_modules/lame/node_modules/bindings /root/.npm/71647957-dules-lame-node-modules-bindings.lock
+896 silly lockFile 349e262d-t-npm-bindings-1-3-0-package-tgz tar:///root/.npm/bindings/1.3.0/package.tgz
+897 verbose lock tar:///root/.npm/bindings/1.3.0/package.tgz /root/.npm/349e262d-t-npm-bindings-1-3-0-package-tgz.lock
+898 verbose tar unpack /root/.npm/nan/2.6.2/package.tgz
+899 silly lockFile c8fb30d0-de-modules-lame-node-modules-nan tar:///root/NotStu/node_modules/lame/node_modules/nan
+900 verbose lock tar:///root/NotStu/node_modules/lame/node_modules/nan /root/.npm/c8fb30d0-de-modules-lame-node-modules-nan.lock
+901 silly lockFile b2c61b2b-r-root-npm-nan-2-6-2-package-tgz tar:///root/.npm/nan/2.6.2/package.tgz
+902 verbose lock tar:///root/.npm/nan/2.6.2/package.tgz /root/.npm/b2c61b2b-r-root-npm-nan-2-6-2-package-tgz.lock
+903 verbose tar unpack /root/.npm/debug/2.6.8/package.tgz
+904 silly lockFile ac8d436b--modules-lame-node-modules-debug tar:///root/NotStu/node_modules/lame/node_modules/debug
+905 verbose lock tar:///root/NotStu/node_modules/lame/node_modules/debug /root/.npm/ac8d436b--modules-lame-node-modules-debug.lock
+906 silly lockFile 2ca999c5-root-npm-debug-2-6-8-package-tgz tar:///root/.npm/debug/2.6.8/package.tgz
+907 verbose lock tar:///root/.npm/debug/2.6.8/package.tgz /root/.npm/2ca999c5-root-npm-debug-2-6-8-package-tgz.lock
+908 silly gunzTarPerm modes [ '755', '644' ]
+909 silly gunzTarPerm modes [ '755', '644' ]
+910 silly gunzTarPerm modes [ '755', '644' ]
+911 silly gunzTarPerm modes [ '755', '644' ]
+912 silly gunzTarPerm extractEntry package.json
+913 silly gunzTarPerm extractEntry package.json
+914 silly gunzTarPerm extractEntry package.json
+915 silly gunzTarPerm modified mode [ 'package.json', 436, 420 ]
+916 silly gunzTarPerm extractEntry package.json
+917 silly gunzTarPerm extractEntry .npmignore
+918 silly gunzTarPerm extractEntry README.md
+919 silly gunzTarPerm extractEntry README.md
+920 silly gunzTarPerm extractEntry bindings.js
+921 silly gunzTarPerm extractEntry README.md
+922 silly gunzTarPerm modified mode [ 'README.md', 436, 420 ]
+923 silly gunzTarPerm extractEntry .npmignore
+924 silly gunzTarPerm extractEntry README.md
+925 silly gunzTarPerm extractEntry include_dirs.js
+926 silly gunzTarPerm modified mode [ 'include_dirs.js', 436, 420 ]
+927 silly gunzTarPerm extractEntry LICENSE
+928 silly gunzTarPerm extractEntry duplex.js
+929 silly gunzTarPerm extractEntry nan_converters_43_inl.h
+930 silly gunzTarPerm modified mode [ 'nan_converters_43_inl.h', 436, 420 ]
+931 silly gunzTarPerm extractEntry LICENSE.md
+932 silly gunzTarPerm modified mode [ 'LICENSE.md', 436, 420 ]
+933 silly gunzTarPerm extractEntry doc/new.md
+934 silly gunzTarPerm modified mode [ 'doc/new.md', 436, 420 ]
+935 silly gunzTarPerm extractEntry LICENSE
+936 silly gunzTarPerm extractEntry doc/asyncworker.md
+937 silly gunzTarPerm modified mode [ 'doc/asyncworker.md', 436, 420 ]
+938 silly gunzTarPerm extractEntry writable.js
+939 silly gunzTarPerm extractEntry passthrough.js
+940 silly gunzTarPerm extractEntry karma.conf.js
+941 silly gunzTarPerm extractEntry node.js
+942 silly gunzTarPerm extractEntry Makefile
+943 silly gunzTarPerm extractEntry .coveralls.yml
+944 silly gunzTarPerm extractEntry doc/callback.md
+945 silly gunzTarPerm modified mode [ 'doc/callback.md', 436, 420 ]
+946 silly gunzTarPerm extractEntry doc/converters.md
+947 silly gunzTarPerm modified mode [ 'doc/converters.md', 436, 420 ]
+948 silly gunzTarPerm extractEntry readable.js
+949 silly gunzTarPerm extractEntry transform.js
+950 silly gunzTarPerm extractEntry .eslintrc
+951 silly gunzTarPerm extractEntry component.json
+952 silly gunzTarPerm extractEntry doc/errors.md
+953 silly gunzTarPerm modified mode [ 'doc/errors.md', 436, 420 ]
+954 silly gunzTarPerm extractEntry doc/json.md
+955 silly gunzTarPerm modified mode [ 'doc/json.md', 436, 420 ]
+956 silly gunzTarPerm extractEntry float.patch
+957 silly gunzTarPerm extractEntry lib/_stream_duplex.js
+958 silly gunzTarPerm extractEntry lib/_stream_passthrough.js
+959 silly gunzTarPerm extractEntry lib/_stream_readable.js
+960 silly gunzTarPerm extractEntry lib/_stream_transform.js
+961 silly gunzTarPerm extractEntry lib/_stream_writable.js
+962 silly lockFile 71647957-dules-lame-node-modules-bindings tar:///root/NotStu/node_modules/lame/node_modules/bindings
+963 silly lockFile 71647957-dules-lame-node-modules-bindings tar:///root/NotStu/node_modules/lame/node_modules/bindings
+964 silly lockFile 349e262d-t-npm-bindings-1-3-0-package-tgz tar:///root/.npm/bindings/1.3.0/package.tgz
+965 silly lockFile 349e262d-t-npm-bindings-1-3-0-package-tgz tar:///root/.npm/bindings/1.3.0/package.tgz
+966 silly gunzTarPerm extractEntry .travis.yml
+967 silly gunzTarPerm extractEntry CHANGELOG.md
+968 silly gunzTarPerm extractEntry doc/maybe_types.md
+969 silly gunzTarPerm modified mode [ 'doc/maybe_types.md', 436, 420 ]
+970 silly gunzTarPerm extractEntry doc/methods.md
+971 silly gunzTarPerm modified mode [ 'doc/methods.md', 436, 420 ]
+972 info preinstall bindings@1.3.0
+973 verbose readDependencies using package.json deps
+974 verbose readDependencies using package.json deps
+975 silly resolved []
+976 verbose about to build /root/NotStu/node_modules/lame/node_modules/bindings
+977 info build /root/NotStu/node_modules/lame/node_modules/bindings
+978 verbose linkStuff [ false,
+978 verbose linkStuff   false,
+978 verbose linkStuff   false,
+978 verbose linkStuff   '/root/NotStu/node_modules/lame/node_modules' ]
+979 info linkStuff bindings@1.3.0
+980 verbose linkBins bindings@1.3.0
+981 verbose linkMans bindings@1.3.0
+982 verbose rebuildBundles bindings@1.3.0
+983 info install bindings@1.3.0
+984 silly gunzTarPerm extractEntry src/browser.js
+985 silly gunzTarPerm extractEntry src/debug.js
+986 silly gunzTarPerm extractEntry doc/buffers.md
+987 silly gunzTarPerm modified mode [ 'doc/buffers.md', 436, 420 ]
+988 silly gunzTarPerm extractEntry doc/node_misc.md
+989 silly gunzTarPerm modified mode [ 'doc/node_misc.md', 436, 420 ]
+990 info postinstall bindings@1.3.0
+991 silly gunzTarPerm extractEntry src/index.js
+992 silly gunzTarPerm extractEntry src/node.js
+993 silly gunzTarPerm extractEntry doc/object_wrappers.md
+994 silly gunzTarPerm modified mode [ 'doc/object_wrappers.md', 436, 420 ]
+995 silly gunzTarPerm extractEntry doc/persistent.md
+996 silly gunzTarPerm modified mode [ 'doc/persistent.md', 436, 420 ]
+997 silly gunzTarPerm extractEntry doc/scopes.md
+998 silly gunzTarPerm modified mode [ 'doc/scopes.md', 436, 420 ]
+999 silly gunzTarPerm extractEntry doc/script.md
+1000 silly gunzTarPerm modified mode [ 'doc/script.md', 436, 420 ]
+1001 silly gunzTarPerm extractEntry doc/string_bytes.md
+1002 silly gunzTarPerm modified mode [ 'doc/string_bytes.md', 436, 420 ]
+1003 silly gunzTarPerm extractEntry doc/v8_internals.md
+1004 silly gunzTarPerm modified mode [ 'doc/v8_internals.md', 436, 420 ]
+1005 silly gunzTarPerm extractEntry doc/v8_misc.md
+1006 silly gunzTarPerm modified mode [ 'doc/v8_misc.md', 436, 420 ]
+1007 silly gunzTarPerm extractEntry nan.h
+1008 silly gunzTarPerm modified mode [ 'nan.h', 436, 420 ]
+1009 silly gunzTarPerm extractEntry nan_callbacks.h
+1010 silly gunzTarPerm modified mode [ 'nan_callbacks.h', 436, 420 ]
+1011 silly gunzTarPerm extractEntry nan_callbacks_12_inl.h
+1012 silly gunzTarPerm modified mode [ 'nan_callbacks_12_inl.h', 436, 420 ]
+1013 silly gunzTarPerm extractEntry nan_callbacks_pre_12_inl.h
+1014 silly gunzTarPerm modified mode [ 'nan_callbacks_pre_12_inl.h', 436, 420 ]
+1015 silly gunzTarPerm extractEntry nan_converters.h
+1016 silly gunzTarPerm modified mode [ 'nan_converters.h', 436, 420 ]
+1017 silly gunzTarPerm extractEntry nan_converters_pre_43_inl.h
+1018 silly gunzTarPerm modified mode [ 'nan_converters_pre_43_inl.h', 436, 420 ]
+1019 silly gunzTarPerm extractEntry nan_implementation_12_inl.h
+1020 silly gunzTarPerm modified mode [ 'nan_implementation_12_inl.h', 436, 420 ]
+1021 silly gunzTarPerm extractEntry nan_implementation_pre_12_inl.h
+1022 silly gunzTarPerm modified mode [ 'nan_implementation_pre_12_inl.h', 436, 420 ]
+1023 silly gunzTarPerm extractEntry nan_json.h
+1024 silly gunzTarPerm modified mode [ 'nan_json.h', 436, 420 ]
+1025 silly gunzTarPerm extractEntry nan_maybe_43_inl.h
+1026 silly gunzTarPerm modified mode [ 'nan_maybe_43_inl.h', 436, 420 ]
+1027 silly gunzTarPerm extractEntry nan_maybe_pre_43_inl.h
+1028 silly gunzTarPerm modified mode [ 'nan_maybe_pre_43_inl.h', 436, 420 ]
+1029 silly gunzTarPerm extractEntry nan_new.h
+1030 silly gunzTarPerm modified mode [ 'nan_new.h', 436, 420 ]
+1031 silly gunzTarPerm extractEntry nan_object_wrap.h
+1032 silly gunzTarPerm modified mode [ 'nan_object_wrap.h', 436, 420 ]
+1033 silly gunzTarPerm extractEntry nan_persistent_12_inl.h
+1034 silly gunzTarPerm modified mode [ 'nan_persistent_12_inl.h', 436, 420 ]
+1035 silly lockFile 49a22008-ame-node-modules-readable-stream tar:///root/NotStu/node_modules/lame/node_modules/readable-stream
+1036 silly lockFile 49a22008-ame-node-modules-readable-stream tar:///root/NotStu/node_modules/lame/node_modules/readable-stream
+1037 silly lockFile 6e129eba-adable-stream-1-1-14-package-tgz tar:///root/.npm/readable-stream/1.1.14/package.tgz
+1038 silly lockFile 6e129eba-adable-stream-1-1-14-package-tgz tar:///root/.npm/readable-stream/1.1.14/package.tgz
+1039 silly gunzTarPerm extractEntry nan_persistent_pre_12_inl.h
+1040 silly gunzTarPerm modified mode [ 'nan_persistent_pre_12_inl.h', 436, 420 ]
+1041 silly gunzTarPerm extractEntry nan_private.h
+1042 silly gunzTarPerm modified mode [ 'nan_private.h', 436, 420 ]
+1043 silly lockFile ac8d436b--modules-lame-node-modules-debug tar:///root/NotStu/node_modules/lame/node_modules/debug
+1044 silly lockFile ac8d436b--modules-lame-node-modules-debug tar:///root/NotStu/node_modules/lame/node_modules/debug
+1045 info preinstall readable-stream@1.1.14
+1046 silly lockFile 2ca999c5-root-npm-debug-2-6-8-package-tgz tar:///root/.npm/debug/2.6.8/package.tgz
+1047 silly lockFile 2ca999c5-root-npm-debug-2-6-8-package-tgz tar:///root/.npm/debug/2.6.8/package.tgz
+1048 verbose readDependencies using package.json deps
+1049 verbose readDependencies using package.json deps
+1050 info preinstall debug@2.6.8
+1051 verbose cache add [ 'core-util-is@~1.0.0', null ]
+1052 verbose cache add name=undefined spec="core-util-is@~1.0.0" args=["core-util-is@~1.0.0",null]
+1053 verbose parsed url Url {
+1053 verbose parsed url   protocol: null,
+1053 verbose parsed url   slashes: null,
+1053 verbose parsed url   auth: null,
+1053 verbose parsed url   host: null,
+1053 verbose parsed url   port: null,
+1053 verbose parsed url   hostname: null,
+1053 verbose parsed url   hash: null,
+1053 verbose parsed url   search: null,
+1053 verbose parsed url   query: null,
+1053 verbose parsed url   pathname: 'core-util-is@~1.0.0',
+1053 verbose parsed url   path: 'core-util-is@~1.0.0',
+1053 verbose parsed url   href: 'core-util-is@~1.0.0' }
+1054 verbose cache add [ 'isarray@0.0.1', null ]
+1055 verbose cache add name=undefined spec="isarray@0.0.1" args=["isarray@0.0.1",null]
+1056 verbose parsed url Url {
+1056 verbose parsed url   protocol: null,
+1056 verbose parsed url   slashes: null,
+1056 verbose parsed url   auth: null,
+1056 verbose parsed url   host: null,
+1056 verbose parsed url   port: null,
+1056 verbose parsed url   hostname: null,
+1056 verbose parsed url   hash: null,
+1056 verbose parsed url   search: null,
+1056 verbose parsed url   query: null,
+1056 verbose parsed url   pathname: 'isarray@0.0.1',
+1056 verbose parsed url   path: 'isarray@0.0.1',
+1056 verbose parsed url   href: 'isarray@0.0.1' }
+1057 verbose cache add [ 'string_decoder@~0.10.x', null ]
+1058 verbose cache add name=undefined spec="string_decoder@~0.10.x" args=["string_decoder@~0.10.x",null]
+1059 verbose parsed url Url {
+1059 verbose parsed url   protocol: null,
+1059 verbose parsed url   slashes: null,
+1059 verbose parsed url   auth: null,
+1059 verbose parsed url   host: null,
+1059 verbose parsed url   port: null,
+1059 verbose parsed url   hostname: null,
+1059 verbose parsed url   hash: null,
+1059 verbose parsed url   search: null,
+1059 verbose parsed url   query: null,
+1059 verbose parsed url   pathname: 'string_decoder@~0.10.x',
+1059 verbose parsed url   path: 'string_decoder@~0.10.x',
+1059 verbose parsed url   href: 'string_decoder@~0.10.x' }
+1060 silly gunzTarPerm extractEntry nan_string_bytes.h
+1061 silly gunzTarPerm modified mode [ 'nan_string_bytes.h', 436, 420 ]
+1062 silly gunzTarPerm extractEntry nan_typedarray_contents.h
+1063 silly gunzTarPerm modified mode [ 'nan_typedarray_contents.h', 436, 420 ]
+1064 verbose cache add name="core-util-is" spec="~1.0.0" args=["core-util-is","~1.0.0"]
+1065 verbose parsed url Url {
+1065 verbose parsed url   protocol: null,
+1065 verbose parsed url   slashes: null,
+1065 verbose parsed url   auth: null,
+1065 verbose parsed url   host: null,
+1065 verbose parsed url   port: null,
+1065 verbose parsed url   hostname: null,
+1065 verbose parsed url   hash: null,
+1065 verbose parsed url   search: null,
+1065 verbose parsed url   query: null,
+1065 verbose parsed url   pathname: '~1.0.0',
+1065 verbose parsed url   path: '~1.0.0',
+1065 verbose parsed url   href: '~1.0.0' }
+1066 verbose addNamed [ 'core-util-is', '~1.0.0' ]
+1067 verbose addNamed [ null, '>=1.0.0 <1.1.0' ]
+1068 silly lockFile 577b60c4-core-util-is-1-0-0 core-util-is@~1.0.0
+1069 verbose lock core-util-is@~1.0.0 /root/.npm/577b60c4-core-util-is-1-0-0.lock
+1070 verbose cache add name="isarray" spec="0.0.1" args=["isarray","0.0.1"]
+1071 verbose parsed url Url {
+1071 verbose parsed url   protocol: null,
+1071 verbose parsed url   slashes: null,
+1071 verbose parsed url   auth: null,
+1071 verbose parsed url   host: null,
+1071 verbose parsed url   port: null,
+1071 verbose parsed url   hostname: null,
+1071 verbose parsed url   hash: null,
+1071 verbose parsed url   search: null,
+1071 verbose parsed url   query: null,
+1071 verbose parsed url   pathname: '0.0.1',
+1071 verbose parsed url   path: '0.0.1',
+1071 verbose parsed url   href: '0.0.1' }
+1072 verbose addNamed [ 'isarray', '0.0.1' ]
+1073 verbose addNamed [ '0.0.1', '0.0.1' ]
+1074 silly lockFile 9efe11b1-isarray-0-0-1 isarray@0.0.1
+1075 verbose lock isarray@0.0.1 /root/.npm/9efe11b1-isarray-0-0-1.lock
+1076 verbose cache add name="string_decoder" spec="~0.10.x" args=["string_decoder","~0.10.x"]
+1077 verbose parsed url Url {
+1077 verbose parsed url   protocol: null,
+1077 verbose parsed url   slashes: null,
+1077 verbose parsed url   auth: null,
+1077 verbose parsed url   host: null,
+1077 verbose parsed url   port: null,
+1077 verbose parsed url   hostname: null,
+1077 verbose parsed url   hash: null,
+1077 verbose parsed url   search: null,
+1077 verbose parsed url   query: null,
+1077 verbose parsed url   pathname: '~0.10.x',
+1077 verbose parsed url   path: '~0.10.x',
+1077 verbose parsed url   href: '~0.10.x' }
+1078 verbose addNamed [ 'string_decoder', '~0.10.x' ]
+1079 verbose addNamed [ null, '>=0.10.0 <0.11.0' ]
+1080 silly lockFile 8f75c97d-string-decoder-0-10-x string_decoder@~0.10.x
+1081 verbose lock string_decoder@~0.10.x /root/.npm/8f75c97d-string-decoder-0-10-x.lock
+1082 verbose cache add [ 'inherits@~2.0.1', null ]
+1083 verbose cache add name=undefined spec="inherits@~2.0.1" args=["inherits@~2.0.1",null]
+1084 verbose parsed url Url {
+1084 verbose parsed url   protocol: null,
+1084 verbose parsed url   slashes: null,
+1084 verbose parsed url   auth: null,
+1084 verbose parsed url   host: null,
+1084 verbose parsed url   port: null,
+1084 verbose parsed url   hostname: null,
+1084 verbose parsed url   hash: null,
+1084 verbose parsed url   search: null,
+1084 verbose parsed url   query: null,
+1084 verbose parsed url   pathname: 'inherits@~2.0.1',
+1084 verbose parsed url   path: 'inherits@~2.0.1',
+1084 verbose parsed url   href: 'inherits@~2.0.1' }
+1085 verbose cache add name="inherits" spec="~2.0.1" args=["inherits","~2.0.1"]
+1086 verbose parsed url Url {
+1086 verbose parsed url   protocol: null,
+1086 verbose parsed url   slashes: null,
+1086 verbose parsed url   auth: null,
+1086 verbose parsed url   host: null,
+1086 verbose parsed url   port: null,
+1086 verbose parsed url   hostname: null,
+1086 verbose parsed url   hash: null,
+1086 verbose parsed url   search: null,
+1086 verbose parsed url   query: null,
+1086 verbose parsed url   pathname: '~2.0.1',
+1086 verbose parsed url   path: '~2.0.1',
+1086 verbose parsed url   href: '~2.0.1' }
+1087 verbose addNamed [ 'inherits', '~2.0.1' ]
+1088 verbose addNamed [ null, '>=2.0.1 <2.1.0' ]
+1089 silly lockFile 098ef39f-inherits-2-0-1 inherits@~2.0.1
+1090 verbose lock inherits@~2.0.1 /root/.npm/098ef39f-inherits-2-0-1.lock
+1091 verbose readDependencies using package.json deps
+1092 silly addNameRange { name: 'core-util-is', range: '>=1.0.0 <1.1.0', hasData: false }
+1093 silly addNameRange { name: 'string_decoder',
+1093 silly addNameRange   range: '>=0.10.0 <0.11.0',
+1093 silly addNameRange   hasData: false }
+1094 verbose readDependencies using package.json deps
+1095 silly addNameRange { name: 'inherits', range: '>=2.0.1 <2.1.0', hasData: false }
+1096 verbose cache add [ 'ms@2.0.0', null ]
+1097 verbose cache add name=undefined spec="ms@2.0.0" args=["ms@2.0.0",null]
+1098 verbose parsed url Url {
+1098 verbose parsed url   protocol: null,
+1098 verbose parsed url   slashes: null,
+1098 verbose parsed url   auth: null,
+1098 verbose parsed url   host: null,
+1098 verbose parsed url   port: null,
+1098 verbose parsed url   hostname: null,
+1098 verbose parsed url   hash: null,
+1098 verbose parsed url   search: null,
+1098 verbose parsed url   query: null,
+1098 verbose parsed url   pathname: 'ms@2.0.0',
+1098 verbose parsed url   path: 'ms@2.0.0',
+1098 verbose parsed url   href: 'ms@2.0.0' }
+1099 verbose cache add name="ms" spec="2.0.0" args=["ms","2.0.0"]
+1100 verbose parsed url Url {
+1100 verbose parsed url   protocol: null,
+1100 verbose parsed url   slashes: null,
+1100 verbose parsed url   auth: null,
+1100 verbose parsed url   host: null,
+1100 verbose parsed url   port: null,
+1100 verbose parsed url   hostname: null,
+1100 verbose parsed url   hash: null,
+1100 verbose parsed url   search: null,
+1100 verbose parsed url   query: null,
+1100 verbose parsed url   pathname: '2.0.0',
+1100 verbose parsed url   path: '2.0.0',
+1100 verbose parsed url   href: '2.0.0' }
+1101 verbose addNamed [ 'ms', '2.0.0' ]
+1102 verbose addNamed [ '2.0.0', '2.0.0' ]
+1103 silly lockFile 75aee418-ms-2-0-0 ms@2.0.0
+1104 verbose lock ms@2.0.0 /root/.npm/75aee418-ms-2-0-0.lock
+1105 verbose request where is /core-util-is
+1106 verbose request registry https://registry.npmjs.org/
+1107 verbose url raw /core-util-is
+1108 verbose url resolving [ 'https://registry.npmjs.org/', './core-util-is' ]
+1109 verbose url resolved https://registry.npmjs.org/core-util-is
+1110 verbose request where is https://registry.npmjs.org/core-util-is
+1111 info trying registry request attempt 1 at 12:08:03 AM
+1112 verbose etag W/"59116c0a-ec5"
+1113 http GET https://registry.npmjs.org/core-util-is
+1114 verbose request where is /isarray
+1115 verbose request registry https://registry.npmjs.org/
+1116 verbose url raw /isarray
+1117 verbose url resolving [ 'https://registry.npmjs.org/', './isarray' ]
+1118 verbose url resolved https://registry.npmjs.org/isarray
+1119 verbose request where is https://registry.npmjs.org/isarray
+1120 info trying registry request attempt 1 at 12:08:03 AM
+1121 verbose etag W/"5965e354-286a"
+1122 http GET https://registry.npmjs.org/isarray
+1123 verbose request where is /string_decoder
+1124 verbose request registry https://registry.npmjs.org/
+1125 verbose url raw /string_decoder
+1126 verbose url resolving [ 'https://registry.npmjs.org/', './string_decoder' ]
+1127 verbose url resolved https://registry.npmjs.org/string_decoder
+1128 verbose request where is https://registry.npmjs.org/string_decoder
+1129 info trying registry request attempt 1 at 12:08:03 AM
+1130 verbose etag W/"594c0e1f-3a37"
+1131 http GET https://registry.npmjs.org/string_decoder
+1132 verbose request where is /inherits
+1133 verbose request registry https://registry.npmjs.org/
+1134 verbose url raw /inherits
+1135 verbose url resolving [ 'https://registry.npmjs.org/', './inherits' ]
+1136 verbose url resolved https://registry.npmjs.org/inherits
+1137 verbose request where is https://registry.npmjs.org/inherits
+1138 info trying registry request attempt 1 at 12:08:03 AM
+1139 verbose etag W/"5945d779-2230"
+1140 http GET https://registry.npmjs.org/inherits
+1141 silly gunzTarPerm extractEntry nan_weak.h
+1142 silly gunzTarPerm modified mode [ 'nan_weak.h', 436, 420 ]
+1143 silly gunzTarPerm extractEntry CHANGELOG.md
+1144 silly gunzTarPerm modified mode [ 'CHANGELOG.md', 436, 420 ]
+1145 verbose request where is /ms
+1146 verbose request registry https://registry.npmjs.org/
+1147 verbose url raw /ms
+1148 verbose url resolving [ 'https://registry.npmjs.org/', './ms' ]
+1149 verbose url resolved https://registry.npmjs.org/ms
+1150 verbose request where is https://registry.npmjs.org/ms
+1151 info trying registry request attempt 1 at 12:08:03 AM
+1152 verbose etag W/"599bd1a1-3c02"
+1153 http GET https://registry.npmjs.org/ms
+1154 silly gunzTarPerm extractEntry tools/package.json
+1155 silly gunzTarPerm modified mode [ 'tools/package.json', 436, 420 ]
+1156 silly gunzTarPerm extractEntry tools/README.md
+1157 silly gunzTarPerm modified mode [ 'tools/README.md', 436, 420 ]
+1158 silly gunzTarPerm extractEntry tools/1to2.js
+1159 silly gunzTarPerm modified mode [ 'tools/1to2.js', 509, 493 ]
+1160 silly lockFile c8fb30d0-de-modules-lame-node-modules-nan tar:///root/NotStu/node_modules/lame/node_modules/nan
+1161 silly lockFile c8fb30d0-de-modules-lame-node-modules-nan tar:///root/NotStu/node_modules/lame/node_modules/nan
+1162 silly lockFile b2c61b2b-r-root-npm-nan-2-6-2-package-tgz tar:///root/.npm/nan/2.6.2/package.tgz
+1163 silly lockFile b2c61b2b-r-root-npm-nan-2-6-2-package-tgz tar:///root/.npm/nan/2.6.2/package.tgz
+1164 info preinstall nan@2.6.2
+1165 verbose readDependencies using package.json deps
+1166 verbose readDependencies using package.json deps
+1167 silly resolved []
+1168 verbose about to build /root/NotStu/node_modules/lame/node_modules/nan
+1169 info build /root/NotStu/node_modules/lame/node_modules/nan
+1170 verbose linkStuff [ false,
+1170 verbose linkStuff   false,
+1170 verbose linkStuff   false,
+1170 verbose linkStuff   '/root/NotStu/node_modules/lame/node_modules' ]
+1171 info linkStuff nan@2.6.2
+1172 verbose linkBins nan@2.6.2
+1173 verbose linkMans nan@2.6.2
+1174 verbose rebuildBundles nan@2.6.2
+1175 info install nan@2.6.2
+1176 info postinstall nan@2.6.2
+1177 http 304 https://registry.npmjs.org/isarray
+1178 silly registry.get cb [ 304,
+1178 silly registry.get   { date: 'Sat, 26 Aug 2017 04:08:09 GMT',
+1178 silly registry.get     via: '1.1 varnish',
+1178 silly registry.get     'cache-control': 'max-age=300',
+1178 silly registry.get     etag: 'W/"5965e354-286a"',
+1178 silly registry.get     age: '164',
+1178 silly registry.get     connection: 'close',
+1178 silly registry.get     'x-served-by': 'cache-jfk8120-JFK',
+1178 silly registry.get     'x-cache': 'HIT',
+1178 silly registry.get     'x-cache-hits': '12',
+1178 silly registry.get     'x-timer': 'S1503720490.768878,VS0,VE0',
+1178 silly registry.get     vary: 'Accept-Encoding, Accept' } ]
+1179 verbose etag https://registry.npmjs.org/isarray from cache
+1180 http 304 https://registry.npmjs.org/core-util-is
+1181 silly registry.get cb [ 304,
+1181 silly registry.get   { date: 'Sat, 26 Aug 2017 04:08:09 GMT',
+1181 silly registry.get     via: '1.1 varnish',
+1181 silly registry.get     'cache-control': 'max-age=300',
+1181 silly registry.get     etag: 'W/"59116c0a-ec5"',
+1181 silly registry.get     age: '121',
+1181 silly registry.get     connection: 'close',
+1181 silly registry.get     'x-served-by': 'cache-jfk8127-JFK',
+1181 silly registry.get     'x-cache': 'HIT',
+1181 silly registry.get     'x-cache-hits': '15',
+1181 silly registry.get     'x-timer': 'S1503720490.769745,VS0,VE0',
+1181 silly registry.get     vary: 'Accept-Encoding, Accept' } ]
+1182 verbose etag https://registry.npmjs.org/core-util-is from cache
+1183 silly addNameRange number 2 { name: 'core-util-is', range: '>=1.0.0 <1.1.0', hasData: true }
+1184 silly addNameRange versions [ 'core-util-is', [ '1.0.0', '1.0.1', '1.0.2' ] ]
+1185 verbose addNamed [ 'core-util-is', '1.0.2' ]
+1186 verbose addNamed [ '1.0.2', '1.0.2' ]
+1187 silly lockFile 250fbf62-core-util-is-1-0-2 core-util-is@1.0.2
+1188 verbose lock core-util-is@1.0.2 /root/.npm/250fbf62-core-util-is-1-0-2.lock
+1189 silly lockFile 9efe11b1-isarray-0-0-1 isarray@0.0.1
+1190 silly lockFile 9efe11b1-isarray-0-0-1 isarray@0.0.1
+1191 silly lockFile 250fbf62-core-util-is-1-0-2 core-util-is@1.0.2
+1192 silly lockFile 250fbf62-core-util-is-1-0-2 core-util-is@1.0.2
+1193 silly lockFile 577b60c4-core-util-is-1-0-0 core-util-is@~1.0.0
+1194 silly lockFile 577b60c4-core-util-is-1-0-0 core-util-is@~1.0.0
+1195 http 304 https://registry.npmjs.org/string_decoder
+1196 silly registry.get cb [ 304,
+1196 silly registry.get   { date: 'Sat, 26 Aug 2017 04:08:09 GMT',
+1196 silly registry.get     via: '1.1 varnish',
+1196 silly registry.get     'cache-control': 'max-age=300',
+1196 silly registry.get     etag: 'W/"594c0e1f-3a37"',
+1196 silly registry.get     age: '9',
+1196 silly registry.get     connection: 'close',
+1196 silly registry.get     'x-served-by': 'cache-jfk8138-JFK',
+1196 silly registry.get     'x-cache': 'HIT',
+1196 silly registry.get     'x-cache-hits': '3',
+1196 silly registry.get     'x-timer': 'S1503720490.792367,VS0,VE0',
+1196 silly registry.get     vary: 'Accept-Encoding, Accept' } ]
+1197 verbose etag https://registry.npmjs.org/string_decoder from cache
+1198 http 304 https://registry.npmjs.org/inherits
+1199 silly registry.get cb [ 304,
+1199 silly registry.get   { date: 'Sat, 26 Aug 2017 04:08:09 GMT',
+1199 silly registry.get     via: '1.1 varnish',
+1199 silly registry.get     'cache-control': 'max-age=300',
+1199 silly registry.get     etag: 'W/"5945d779-2230"',
+1199 silly registry.get     age: '136',
+1199 silly registry.get     connection: 'close',
+1199 silly registry.get     'x-served-by': 'cache-jfk8141-JFK',
+1199 silly registry.get     'x-cache': 'HIT',
+1199 silly registry.get     'x-cache-hits': '7',
+1199 silly registry.get     'x-timer': 'S1503720490.792349,VS0,VE0',
+1199 silly registry.get     vary: 'Accept-Encoding, Accept' } ]
+1200 verbose etag https://registry.npmjs.org/inherits from cache
+1201 http 304 https://registry.npmjs.org/ms
+1202 silly registry.get cb [ 304,
+1202 silly registry.get   { date: 'Sat, 26 Aug 2017 04:08:09 GMT',
+1202 silly registry.get     via: '1.1 varnish',
+1202 silly registry.get     'cache-control': 'max-age=300',
+1202 silly registry.get     etag: 'W/"599bd1a1-3c02"',
+1202 silly registry.get     age: '2',
+1202 silly registry.get     connection: 'close',
+1202 silly registry.get     'x-served-by': 'cache-jfk8151-JFK',
+1202 silly registry.get     'x-cache': 'HIT',
+1202 silly registry.get     'x-cache-hits': '1',
+1202 silly registry.get     'x-timer': 'S1503720490.796022,VS0,VE0',
+1202 silly registry.get     vary: 'Accept-Encoding, Accept' } ]
+1203 verbose etag https://registry.npmjs.org/ms from cache
+1204 silly addNameRange number 2 { name: 'string_decoder',
+1204 silly addNameRange   range: '>=0.10.0 <0.11.0',
+1204 silly addNameRange   hasData: true }
+1205 silly addNameRange versions [ 'string_decoder',
+1205 silly addNameRange   [ '0.0.0',
+1205 silly addNameRange     '0.0.1',
+1205 silly addNameRange     '0.10.24',
+1205 silly addNameRange     '0.11.10',
+1205 silly addNameRange     '0.10.25',
+1205 silly addNameRange     '0.11.10-1',
+1205 silly addNameRange     '0.10.25-1',
+1205 silly addNameRange     '0.10.31',
+1205 silly addNameRange     '1.0.0',
+1205 silly addNameRange     '1.0.1',
+1205 silly addNameRange     '1.0.2',
+1205 silly addNameRange     '1.0.3' ] ]
+1206 verbose addNamed [ 'string_decoder', '0.10.31' ]
+1207 verbose addNamed [ '0.10.31', '0.10.31' ]
+1208 silly lockFile 0a9a4818-string-decoder-0-10-31 string_decoder@0.10.31
+1209 verbose lock string_decoder@0.10.31 /root/.npm/0a9a4818-string-decoder-0-10-31.lock
+1210 silly addNameRange number 2 { name: 'inherits', range: '>=2.0.1 <2.1.0', hasData: true }
+1211 silly addNameRange versions [ 'inherits',
+1211 silly addNameRange   [ '1.0.0', '2.0.0', '2.0.1', '1.0.1', '1.0.2', '2.0.3' ] ]
+1212 verbose addNamed [ 'inherits', '2.0.3' ]
+1213 verbose addNamed [ '2.0.3', '2.0.3' ]
+1214 silly lockFile 92ff4e28-inherits-2-0-3 inherits@2.0.3
+1215 verbose lock inherits@2.0.3 /root/.npm/92ff4e28-inherits-2-0-3.lock
+1216 silly lockFile 0a9a4818-string-decoder-0-10-31 string_decoder@0.10.31
+1217 silly lockFile 0a9a4818-string-decoder-0-10-31 string_decoder@0.10.31
+1218 silly lockFile 8f75c97d-string-decoder-0-10-x string_decoder@~0.10.x
+1219 silly lockFile 8f75c97d-string-decoder-0-10-x string_decoder@~0.10.x
+1220 silly lockFile 92ff4e28-inherits-2-0-3 inherits@2.0.3
+1221 silly lockFile 92ff4e28-inherits-2-0-3 inherits@2.0.3
+1222 silly lockFile 098ef39f-inherits-2-0-1 inherits@~2.0.1
+1223 silly lockFile 098ef39f-inherits-2-0-1 inherits@~2.0.1
+1224 silly lockFile 75aee418-ms-2-0-0 ms@2.0.0
+1225 silly lockFile 75aee418-ms-2-0-0 ms@2.0.0
+1226 silly resolved [ { name: 'ms',
+1226 silly resolved     version: '2.0.0',
+1226 silly resolved     description: 'Tiny milisecond conversion utility',
+1226 silly resolved     repository: { type: 'git', url: 'git+https://github.com/zeit/ms.git' },
+1226 silly resolved     main: './index',
+1226 silly resolved     files: [ 'index.js' ],
+1226 silly resolved     scripts:
+1226 silly resolved      { precommit: 'lint-staged',
+1226 silly resolved        lint: 'eslint lib/* bin/*',
+1226 silly resolved        test: 'mocha tests.js' },
+1226 silly resolved     eslintConfig: { extends: 'eslint:recommended', env: [Object] },
+1226 silly resolved     'lint-staged': { '*.js': [Object] },
+1226 silly resolved     license: 'MIT',
+1226 silly resolved     devDependencies:
+1226 silly resolved      { eslint: '3.19.0',
+1226 silly resolved        'expect.js': '0.3.1',
+1226 silly resolved        husky: '0.13.3',
+1226 silly resolved        'lint-staged': '3.4.1',
+1226 silly resolved        mocha: '3.4.1' },
+1226 silly resolved     gitHead: '9b88d1568a52ec9bb67ecc8d2aa224fa38fd41f4',
+1226 silly resolved     bugs: { url: 'https://github.com/zeit/ms/issues' },
+1226 silly resolved     homepage: 'https://github.com/zeit/ms#readme',
+1226 silly resolved     _id: 'ms@2.0.0',
+1226 silly resolved     _shasum: '5608aeadfc00be6c2901df5f9861788de0d597c8',
+1226 silly resolved     _from: 'ms@2.0.0',
+1226 silly resolved     _npmVersion: '4.2.0',
+1226 silly resolved     _nodeVersion: '7.8.0',
+1226 silly resolved     _npmUser: { name: 'leo', email: 'leo@zeit.co' },
+1226 silly resolved     dist:
+1226 silly resolved      { shasum: '5608aeadfc00be6c2901df5f9861788de0d597c8',
+1226 silly resolved        tarball: 'https://registry.npmjs.org/ms/-/ms-2.0.0.tgz' },
+1226 silly resolved     maintainers: [ [Object], [Object] ],
+1226 silly resolved     _npmOperationalInternal:
+1226 silly resolved      { host: 'packages-18-east.internal.npmjs.com',
+1226 silly resolved        tmp: 'tmp/ms-2.0.0.tgz_1494937565215_0.34005374647676945' },
+1226 silly resolved     directories: {},
+1226 silly resolved     _resolved: 'https://registry.npmjs.org/ms/-/ms-2.0.0.tgz',
+1226 silly resolved     readme: 'ERROR: No README data found!' } ]
+1227 info install ms@2.0.0 into /root/NotStu/node_modules/lame/node_modules/debug
+1228 info installOne ms@2.0.0
+1229 silly resolved [ { name: 'isarray',
+1229 silly resolved     description: 'Array#isArray for older browsers',
+1229 silly resolved     version: '0.0.1',
+1229 silly resolved     repository:
+1229 silly resolved      { type: 'git',
+1229 silly resolved        url: 'git://github.com/juliangruber/isarray.git' },
+1229 silly resolved     homepage: 'https://github.com/juliangruber/isarray',
+1229 silly resolved     main: 'index.js',
+1229 silly resolved     scripts: { test: 'tap test/*.js' },
+1229 silly resolved     dependencies: {},
+1229 silly resolved     devDependencies: { tap: '*' },
+1229 silly resolved     keywords: [ 'browser', 'isarray', 'array' ],
+1229 silly resolved     author:
+1229 silly resolved      { name: 'Julian Gruber',
+1229 silly resolved        email: 'mail@juliangruber.com',
+1229 silly resolved        url: 'http://juliangruber.com' },
+1229 silly resolved     license: 'MIT',
+1229 silly resolved     _id: 'isarray@0.0.1',
+1229 silly resolved     dist:
+1229 silly resolved      { shasum: '8a18acfca9a8f4177e09abfc6038939b05d1eedf',
+1229 silly resolved        tarball: 'https://registry.npmjs.org/isarray/-/isarray-0.0.1.tgz' },
+1229 silly resolved     _from: 'isarray@0.0.1',
+1229 silly resolved     _npmVersion: '1.2.18',
+1229 silly resolved     _npmUser: { name: 'juliangruber', email: 'julian@juliangruber.com' },
+1229 silly resolved     maintainers: [ [Object] ],
+1229 silly resolved     directories: {},
+1229 silly resolved     _shasum: '8a18acfca9a8f4177e09abfc6038939b05d1eedf',
+1229 silly resolved     _resolved: 'https://registry.npmjs.org/isarray/-/isarray-0.0.1.tgz',
+1229 silly resolved     bugs: { url: 'https://github.com/juliangruber/isarray/issues' },
+1229 silly resolved     readme: 'ERROR: No README data found!' },
+1229 silly resolved   { name: 'core-util-is',
+1229 silly resolved     version: '1.0.2',
+1229 silly resolved     description: 'The `util.is*` functions introduced in Node v0.12.',
+1229 silly resolved     main: 'lib/util.js',
+1229 silly resolved     repository: { type: 'git', url: 'git://github.com/isaacs/core-util-is.git' },
+1229 silly resolved     keywords:
+1229 silly resolved      [ 'util',
+1229 silly resolved        'isBuffer',
+1229 silly resolved        'isArray',
+1229 silly resolved        'isNumber',
+1229 silly resolved        'isString',
+1229 silly resolved        'isRegExp',
+1229 silly resolved        'isThis',
+1229 silly resolved        'isThat',
+1229 silly resolved        'polyfill' ],
+1229 silly resolved     author:
+1229 silly resolved      { name: 'Isaac Z. Schlueter',
+1229 silly resolved        email: 'i@izs.me',
+1229 silly resolved        url: 'http://blog.izs.me/' },
+1229 silly resolved     license: 'MIT',
+1229 silly resolved     bugs: { url: 'https://github.com/isaacs/core-util-is/issues' },
+1229 silly resolved     scripts: { test: 'tap test.js' },
+1229 silly resolved     devDependencies: { tap: '^2.3.0' },
+1229 silly resolved     gitHead: 'a177da234df5638b363ddc15fa324619a38577c8',
+1229 silly resolved     homepage: 'https://github.com/isaacs/core-util-is#readme',
+1229 silly resolved     _id: 'core-util-is@1.0.2',
+1229 silly resolved     _shasum: 'b5fd54220aa2bc5ab57aab7140c940754503c1a7',
+1229 silly resolved     _from: 'core-util-is@~1.0.0',
+1229 silly resolved     _npmVersion: '3.3.2',
+1229 silly resolved     _nodeVersion: '4.0.0',
+1229 silly resolved     _npmUser: { name: 'isaacs', email: 'i@izs.me' },
+1229 silly resolved     dist:
+1229 silly resolved      { shasum: 'b5fd54220aa2bc5ab57aab7140c940754503c1a7',
+1229 silly resolved        tarball: 'https://registry.npmjs.org/core-util-is/-/core-util-is-1.0.2.tgz' },
+1229 silly resolved     maintainers: [ [Object] ],
+1229 silly resolved     directories: {},
+1229 silly resolved     _resolved: 'https://registry.npmjs.org/core-util-is/-/core-util-is-1.0.2.tgz',
+1229 silly resolved     readme: 'ERROR: No README data found!' },
+1229 silly resolved   { name: 'string_decoder',
+1229 silly resolved     version: '0.10.31',
+1229 silly resolved     description: 'The string_decoder module from Node core',
+1229 silly resolved     main: 'index.js',
+1229 silly resolved     dependencies: {},
+1229 silly resolved     devDependencies: { tap: '~0.4.8' },
+1229 silly resolved     scripts: { test: 'tap test/simple/*.js' },
+1229 silly resolved     repository:
+1229 silly resolved      { type: 'git',
+1229 silly resolved        url: 'git://github.com/rvagg/string_decoder.git' },
+1229 silly resolved     homepage: 'https://github.com/rvagg/string_decoder',
+1229 silly resolved     keywords: [ 'string', 'decoder', 'browser', 'browserify' ],
+1229 silly resolved     license: 'MIT',
+1229 silly resolved     gitHead: 'd46d4fd87cf1d06e031c23f1ba170ca7d4ade9a0',
+1229 silly resolved     bugs: { url: 'https://github.com/rvagg/string_decoder/issues' },
+1229 silly resolved     _id: 'string_decoder@0.10.31',
+1229 silly resolved     _shasum: '62e203bc41766c6c28c9fc84301dab1c5310fa94',
+1229 silly resolved     _from: 'string_decoder@~0.10.x',
+1229 silly resolved     _npmVersion: '1.4.23',
+1229 silly resolved     _npmUser: { name: 'rvagg', email: 'rod@vagg.org' },
+1229 silly resolved     maintainers: [ [Object], [Object] ],
+1229 silly resolved     dist:
+1229 silly resolved      { shasum: '62e203bc41766c6c28c9fc84301dab1c5310fa94',
+1229 silly resolved        tarball: 'https://registry.npmjs.org/string_decoder/-/string_decoder-0.10.31.tgz' },
+1229 silly resolved     directories: {},
+1229 silly resolved     _resolved: 'https://registry.npmjs.org/string_decoder/-/string_decoder-0.10.31.tgz',
+1229 silly resolved     readme: 'ERROR: No README data found!' },
+1229 silly resolved   { name: 'inherits',
+1229 silly resolved     description: 'Browser-friendly inheritance fully compatible with standard node.js inherits()',
+1229 silly resolved     version: '2.0.3',
+1229 silly resolved     keywords:
+1229 silly resolved      [ 'inheritance',
+1229 silly resolved        'class',
+1229 silly resolved        'klass',
+1229 silly resolved        'oop',
+1229 silly resolved        'object-oriented',
+1229 silly resolved        'inherits',
+1229 silly resolved        'browser',
+1229 silly resolved        'browserify' ],
+1229 silly resolved     main: './inherits.js',
+1229 silly resolved     browser: './inherits_browser.js',
+1229 silly resolved     repository: { type: 'git', url: 'git://github.com/isaacs/inherits.git' },
+1229 silly resolved     license: 'ISC',
+1229 silly resolved     scripts: { test: 'node test' },
+1229 silly resolved     devDependencies: { tap: '^7.1.0' },
+1229 silly resolved     files: [ 'inherits.js', 'inherits_browser.js' ],
+1229 silly resolved     gitHead: 'e05d0fb27c61a3ec687214f0476386b765364d5f',
+1229 silly resolved     bugs: { url: 'https://github.com/isaacs/inherits/issues' },
+1229 silly resolved     homepage: 'https://github.com/isaacs/inherits#readme',
+1229 silly resolved     _id: 'inherits@2.0.3',
+1229 silly resolved     _shasum: '633c2c83e3da42a502f52466022480f4208261de',
+1229 silly resolved     _from: 'inherits@~2.0.1',
+1229 silly resolved     _npmVersion: '3.10.7',
+1229 silly resolved     _nodeVersion: '6.5.0',
+1229 silly resolved     _npmUser: { name: 'isaacs', email: 'i@izs.me' },
+1229 silly resolved     dist:
+1229 silly resolved      { shasum: '633c2c83e3da42a502f52466022480f4208261de',
+1229 silly resolved        tarball: 'https://registry.npmjs.org/inherits/-/inherits-2.0.3.tgz' },
+1229 silly resolved     maintainers: [ [Object] ],
+1229 silly resolved     _npmOperationalInternal:
+1229 silly resolved      { host: 'packages-16-east.internal.npmjs.com',
+1229 silly resolved        tmp: 'tmp/inherits-2.0.3.tgz_1473295776489_0.08142363070510328' },
+1229 silly resolved     directories: {},
+1229 silly resolved     _resolved: 'https://registry.npmjs.org/inherits/-/inherits-2.0.3.tgz',
+1229 silly resolved     readme: 'ERROR: No README data found!' } ]
+1230 info install isarray@0.0.1 into /root/NotStu/node_modules/lame/node_modules/readable-stream
+1231 info install core-util-is@1.0.2 into /root/NotStu/node_modules/lame/node_modules/readable-stream
+1232 info install string_decoder@0.10.31 into /root/NotStu/node_modules/lame/node_modules/readable-stream
+1233 info install inherits@2.0.3 into /root/NotStu/node_modules/lame/node_modules/readable-stream
+1234 info installOne isarray@0.0.1
+1235 info installOne core-util-is@1.0.2
+1236 info installOne string_decoder@0.10.31
+1237 info installOne inherits@2.0.3
+1238 verbose node_modules/lame/node_modules/debug/node_modules/ms unbuild
+1239 verbose node_modules/lame/node_modules/readable-stream/node_modules/isarray unbuild
+1240 verbose node_modules/lame/node_modules/readable-stream/node_modules/core-util-is unbuild
+1241 verbose node_modules/lame/node_modules/readable-stream/node_modules/string_decoder unbuild
+1242 verbose node_modules/lame/node_modules/readable-stream/node_modules/inherits unbuild
+1243 verbose tar unpack /root/.npm/ms/2.0.0/package.tgz
+1244 silly lockFile 76e1fa25-de-modules-debug-node-modules-ms tar:///root/NotStu/node_modules/lame/node_modules/debug/node_modules/ms
+1245 verbose lock tar:///root/NotStu/node_modules/lame/node_modules/debug/node_modules/ms /root/.npm/76e1fa25-de-modules-debug-node-modules-ms.lock
+1246 silly lockFile ee620adb-ar-root-npm-ms-2-0-0-package-tgz tar:///root/.npm/ms/2.0.0/package.tgz
+1247 verbose lock tar:///root/.npm/ms/2.0.0/package.tgz /root/.npm/ee620adb-ar-root-npm-ms-2-0-0-package-tgz.lock
+1248 verbose tar unpack /root/.npm/isarray/0.0.1/package.tgz
+1249 silly lockFile 4f8d2b92-able-stream-node-modules-isarray tar:///root/NotStu/node_modules/lame/node_modules/readable-stream/node_modules/isarray
+1250 verbose lock tar:///root/NotStu/node_modules/lame/node_modules/readable-stream/node_modules/isarray /root/.npm/4f8d2b92-able-stream-node-modules-isarray.lock
+1251 silly lockFile 44b8127c-ot-npm-isarray-0-0-1-package-tgz tar:///root/.npm/isarray/0.0.1/package.tgz
+1252 verbose lock tar:///root/.npm/isarray/0.0.1/package.tgz /root/.npm/44b8127c-ot-npm-isarray-0-0-1-package-tgz.lock
+1253 verbose tar unpack /root/.npm/core-util-is/1.0.2/package.tgz
+1254 silly lockFile 2eb263b1-stream-node-modules-core-util-is tar:///root/NotStu/node_modules/lame/node_modules/readable-stream/node_modules/core-util-is
+1255 verbose lock tar:///root/NotStu/node_modules/lame/node_modules/readable-stream/node_modules/core-util-is /root/.npm/2eb263b1-stream-node-modules-core-util-is.lock
+1256 silly lockFile f66db8e6-m-core-util-is-1-0-2-package-tgz tar:///root/.npm/core-util-is/1.0.2/package.tgz
+1257 verbose lock tar:///root/.npm/core-util-is/1.0.2/package.tgz /root/.npm/f66db8e6-m-core-util-is-1-0-2-package-tgz.lock
+1258 verbose tar unpack /root/.npm/string_decoder/0.10.31/package.tgz
+1259 silly lockFile aba2d7ce-ream-node-modules-string-decoder tar:///root/NotStu/node_modules/lame/node_modules/readable-stream/node_modules/string_decoder
+1260 verbose lock tar:///root/NotStu/node_modules/lame/node_modules/readable-stream/node_modules/string_decoder /root/.npm/aba2d7ce-ream-node-modules-string-decoder.lock
+1261 silly lockFile bcea0786-ring-decoder-0-10-31-package-tgz tar:///root/.npm/string_decoder/0.10.31/package.tgz
+1262 verbose lock tar:///root/.npm/string_decoder/0.10.31/package.tgz /root/.npm/bcea0786-ring-decoder-0-10-31-package-tgz.lock
+1263 verbose tar unpack /root/.npm/inherits/2.0.3/package.tgz
+1264 silly lockFile e73539f8-ble-stream-node-modules-inherits tar:///root/NotStu/node_modules/lame/node_modules/readable-stream/node_modules/inherits
+1265 verbose lock tar:///root/NotStu/node_modules/lame/node_modules/readable-stream/node_modules/inherits /root/.npm/e73539f8-ble-stream-node-modules-inherits.lock
+1266 silly lockFile df8e3b88-t-npm-inherits-2-0-3-package-tgz tar:///root/.npm/inherits/2.0.3/package.tgz
+1267 verbose lock tar:///root/.npm/inherits/2.0.3/package.tgz /root/.npm/df8e3b88-t-npm-inherits-2-0-3-package-tgz.lock
+1268 silly gunzTarPerm modes [ '755', '644' ]
+1269 silly gunzTarPerm modes [ '755', '644' ]
+1270 silly gunzTarPerm modes [ '755', '644' ]
+1271 silly gunzTarPerm modes [ '755', '644' ]
+1272 silly gunzTarPerm modes [ '755', '644' ]
+1273 silly gunzTarPerm extractEntry package.json
+1274 silly gunzTarPerm extractEntry package.json
+1275 silly gunzTarPerm extractEntry package.json
+1276 silly gunzTarPerm extractEntry package.json
+1277 silly gunzTarPerm modified mode [ 'package.json', 436, 420 ]
+1278 silly gunzTarPerm extractEntry package.json
+1279 silly gunzTarPerm extractEntry index.js
+1280 silly gunzTarPerm extractEntry license.md
+1281 silly gunzTarPerm extractEntry README.md
+1282 silly gunzTarPerm extractEntry index.js
+1283 silly gunzTarPerm extractEntry README.md
+1284 silly gunzTarPerm extractEntry LICENSE
+1285 silly gunzTarPerm extractEntry .npmignore
+1286 silly gunzTarPerm modified mode [ '.npmignore', 436, 420 ]
+1287 silly gunzTarPerm extractEntry README.md
+1288 silly gunzTarPerm modified mode [ 'README.md', 436, 420 ]
+1289 silly gunzTarPerm extractEntry README.md
+1290 silly gunzTarPerm extractEntry LICENSE
+1291 silly gunzTarPerm extractEntry readme.md
+1292 silly gunzTarPerm extractEntry build/build.js
+1293 silly gunzTarPerm extractEntry component.json
+1294 silly gunzTarPerm extractEntry test.js
+1295 silly gunzTarPerm extractEntry float.patch
+1296 silly gunzTarPerm extractEntry LICENSE
+1297 silly gunzTarPerm modified mode [ 'LICENSE', 436, 420 ]
+1298 silly gunzTarPerm extractEntry index.js
+1299 silly gunzTarPerm modified mode [ 'index.js', 436, 420 ]
+1300 silly gunzTarPerm extractEntry inherits.js
+1301 silly gunzTarPerm extractEntry inherits_browser.js
+1302 silly gunzTarPerm extractEntry lib/util.js
+1303 silly lockFile 76e1fa25-de-modules-debug-node-modules-ms tar:///root/NotStu/node_modules/lame/node_modules/debug/node_modules/ms
+1304 silly lockFile 76e1fa25-de-modules-debug-node-modules-ms tar:///root/NotStu/node_modules/lame/node_modules/debug/node_modules/ms
+1305 silly lockFile ee620adb-ar-root-npm-ms-2-0-0-package-tgz tar:///root/.npm/ms/2.0.0/package.tgz
+1306 silly lockFile ee620adb-ar-root-npm-ms-2-0-0-package-tgz tar:///root/.npm/ms/2.0.0/package.tgz
+1307 info preinstall ms@2.0.0
+1308 silly lockFile aba2d7ce-ream-node-modules-string-decoder tar:///root/NotStu/node_modules/lame/node_modules/readable-stream/node_modules/string_decoder
+1309 silly lockFile aba2d7ce-ream-node-modules-string-decoder tar:///root/NotStu/node_modules/lame/node_modules/readable-stream/node_modules/string_decoder
+1310 silly lockFile 4f8d2b92-able-stream-node-modules-isarray tar:///root/NotStu/node_modules/lame/node_modules/readable-stream/node_modules/isarray
+1311 silly lockFile 4f8d2b92-able-stream-node-modules-isarray tar:///root/NotStu/node_modules/lame/node_modules/readable-stream/node_modules/isarray
+1312 silly lockFile e73539f8-ble-stream-node-modules-inherits tar:///root/NotStu/node_modules/lame/node_modules/readable-stream/node_modules/inherits
+1313 silly lockFile e73539f8-ble-stream-node-modules-inherits tar:///root/NotStu/node_modules/lame/node_modules/readable-stream/node_modules/inherits
+1314 silly lockFile bcea0786-ring-decoder-0-10-31-package-tgz tar:///root/.npm/string_decoder/0.10.31/package.tgz
+1315 silly lockFile bcea0786-ring-decoder-0-10-31-package-tgz tar:///root/.npm/string_decoder/0.10.31/package.tgz
+1316 silly lockFile 44b8127c-ot-npm-isarray-0-0-1-package-tgz tar:///root/.npm/isarray/0.0.1/package.tgz
+1317 silly lockFile 44b8127c-ot-npm-isarray-0-0-1-package-tgz tar:///root/.npm/isarray/0.0.1/package.tgz
+1318 silly lockFile df8e3b88-t-npm-inherits-2-0-3-package-tgz tar:///root/.npm/inherits/2.0.3/package.tgz
+1319 silly lockFile df8e3b88-t-npm-inherits-2-0-3-package-tgz tar:///root/.npm/inherits/2.0.3/package.tgz
+1320 verbose readDependencies using package.json deps
+1321 verbose readDependencies using package.json deps
+1322 silly resolved []
+1323 verbose about to build /root/NotStu/node_modules/lame/node_modules/debug/node_modules/ms
+1324 info build /root/NotStu/node_modules/lame/node_modules/debug/node_modules/ms
+1325 verbose linkStuff [ false,
+1325 verbose linkStuff   false,
+1325 verbose linkStuff   false,
+1325 verbose linkStuff   '/root/NotStu/node_modules/lame/node_modules/debug/node_modules' ]
+1326 info linkStuff ms@2.0.0
+1327 verbose linkBins ms@2.0.0
+1328 verbose linkMans ms@2.0.0
+1329 verbose rebuildBundles ms@2.0.0
+1330 info install ms@2.0.0
+1331 info preinstall isarray@0.0.1
+1332 info preinstall inherits@2.0.3
+1333 info preinstall string_decoder@0.10.31
+1334 info postinstall ms@2.0.0
+1335 verbose about to build /root/NotStu/node_modules/lame/node_modules/debug
+1336 info build /root/NotStu/node_modules/lame/node_modules/debug
+1337 verbose linkStuff [ false,
+1337 verbose linkStuff   false,
+1337 verbose linkStuff   false,
+1337 verbose linkStuff   '/root/NotStu/node_modules/lame/node_modules' ]
+1338 info linkStuff debug@2.6.8
+1339 verbose linkBins debug@2.6.8
+1340 verbose linkMans debug@2.6.8
+1341 verbose rebuildBundles debug@2.6.8
+1342 verbose readDependencies using package.json deps
+1343 verbose readDependencies using package.json deps
+1344 verbose readDependencies using package.json deps
+1345 verbose rebuildBundles [ 'ms' ]
+1346 info install debug@2.6.8
+1347 verbose readDependencies using package.json deps
+1348 silly resolved []
+1349 verbose about to build /root/NotStu/node_modules/lame/node_modules/readable-stream/node_modules/isarray
+1350 info build /root/NotStu/node_modules/lame/node_modules/readable-stream/node_modules/isarray
+1351 verbose linkStuff [ false,
+1351 verbose linkStuff   false,
+1351 verbose linkStuff   false,
+1351 verbose linkStuff   '/root/NotStu/node_modules/lame/node_modules/readable-stream/node_modules' ]
+1352 info linkStuff isarray@0.0.1
+1353 verbose linkBins isarray@0.0.1
+1354 verbose linkMans isarray@0.0.1
+1355 verbose rebuildBundles isarray@0.0.1
+1356 verbose readDependencies using package.json deps
+1357 silly resolved []
+1358 verbose about to build /root/NotStu/node_modules/lame/node_modules/readable-stream/node_modules/inherits
+1359 info build /root/NotStu/node_modules/lame/node_modules/readable-stream/node_modules/inherits
+1360 verbose linkStuff [ false,
+1360 verbose linkStuff   false,
+1360 verbose linkStuff   false,
+1360 verbose linkStuff   '/root/NotStu/node_modules/lame/node_modules/readable-stream/node_modules' ]
+1361 info linkStuff inherits@2.0.3
+1362 verbose linkBins inherits@2.0.3
+1363 verbose linkMans inherits@2.0.3
+1364 verbose rebuildBundles inherits@2.0.3
+1365 verbose readDependencies using package.json deps
+1366 silly resolved []
+1367 verbose about to build /root/NotStu/node_modules/lame/node_modules/readable-stream/node_modules/string_decoder
+1368 info build /root/NotStu/node_modules/lame/node_modules/readable-stream/node_modules/string_decoder
+1369 verbose linkStuff [ false,
+1369 verbose linkStuff   false,
+1369 verbose linkStuff   false,
+1369 verbose linkStuff   '/root/NotStu/node_modules/lame/node_modules/readable-stream/node_modules' ]
+1370 info linkStuff string_decoder@0.10.31
+1371 verbose linkBins string_decoder@0.10.31
+1372 verbose linkMans string_decoder@0.10.31
+1373 verbose rebuildBundles string_decoder@0.10.31
+1374 info install isarray@0.0.1
+1375 info install inherits@2.0.3
+1376 info install string_decoder@0.10.31
+1377 silly lockFile 2eb263b1-stream-node-modules-core-util-is tar:///root/NotStu/node_modules/lame/node_modules/readable-stream/node_modules/core-util-is
+1378 silly lockFile 2eb263b1-stream-node-modules-core-util-is tar:///root/NotStu/node_modules/lame/node_modules/readable-stream/node_modules/core-util-is
+1379 info postinstall debug@2.6.8
+1380 silly lockFile f66db8e6-m-core-util-is-1-0-2-package-tgz tar:///root/.npm/core-util-is/1.0.2/package.tgz
+1381 silly lockFile f66db8e6-m-core-util-is-1-0-2-package-tgz tar:///root/.npm/core-util-is/1.0.2/package.tgz
+1382 info postinstall isarray@0.0.1
+1383 info postinstall inherits@2.0.3
+1384 info postinstall string_decoder@0.10.31
+1385 info preinstall core-util-is@1.0.2
+1386 verbose readDependencies using package.json deps
+1387 verbose readDependencies using package.json deps
+1388 silly resolved []
+1389 verbose about to build /root/NotStu/node_modules/lame/node_modules/readable-stream/node_modules/core-util-is
+1390 info build /root/NotStu/node_modules/lame/node_modules/readable-stream/node_modules/core-util-is
+1391 verbose linkStuff [ false,
+1391 verbose linkStuff   false,
+1391 verbose linkStuff   false,
+1391 verbose linkStuff   '/root/NotStu/node_modules/lame/node_modules/readable-stream/node_modules' ]
+1392 info linkStuff core-util-is@1.0.2
+1393 verbose linkBins core-util-is@1.0.2
+1394 verbose linkMans core-util-is@1.0.2
+1395 verbose rebuildBundles core-util-is@1.0.2
+1396 info install core-util-is@1.0.2
+1397 info postinstall core-util-is@1.0.2
+1398 verbose about to build /root/NotStu/node_modules/lame/node_modules/readable-stream
+1399 info build /root/NotStu/node_modules/lame/node_modules/readable-stream
+1400 verbose linkStuff [ false,
+1400 verbose linkStuff   false,
+1400 verbose linkStuff   false,
+1400 verbose linkStuff   '/root/NotStu/node_modules/lame/node_modules' ]
+1401 info linkStuff readable-stream@1.1.14
+1402 verbose linkBins readable-stream@1.1.14
+1403 verbose linkMans readable-stream@1.1.14
+1404 verbose rebuildBundles readable-stream@1.1.14
+1405 verbose rebuildBundles [ 'core-util-is', 'inherits', 'isarray', 'string_decoder' ]
+1406 info install readable-stream@1.1.14
+1407 info postinstall readable-stream@1.1.14
+1408 verbose about to build /root/NotStu/node_modules/lame
+1409 info build /root/NotStu/node_modules/lame
+1410 verbose linkStuff [ false, false, false, '/root/NotStu/node_modules' ]
+1411 info linkStuff lame@1.2.4
+1412 verbose linkBins lame@1.2.4
+1413 verbose linkMans lame@1.2.4
+1414 verbose rebuildBundles lame@1.2.4
+1415 verbose rebuildBundles [ 'bindings', 'debug', 'nan', 'readable-stream' ]
+1416 info install lame@1.2.4
+1417 verbose unsafe-perm in lifecycle false
+1418 info lame@1.2.4 Failed to exec install script
+1419 verbose node_modules/lame unbuild
+1420 warn This failure might be due to the use of legacy binary "node"
+1421 warn For further explanations, please read
+/usr/share/doc/nodejs/README.Debian
+1422 info preuninstall lame@1.2.4
+1423 info uninstall lame@1.2.4
+1424 verbose true,/root/NotStu/node_modules,/root/NotStu/node_modules unbuild lame@1.2.4
+1425 info postuninstall lame@1.2.4
+1426 error lame@1.2.4 install: `node-gyp rebuild`
+1426 error Exit status 1
+1427 error Failed at the lame@1.2.4 install script.
+1427 error This is most likely a problem with the lame package,
+1427 error not with npm itself.
+1427 error Tell the author that this fails on your system:
+1427 error     node-gyp rebuild
+1427 error You can get their info via:
+1427 error     npm owner ls lame
+1427 error There is likely additional logging output above.
+1428 error System Linux 4.12.0-kali1-amd64
+1429 error command "/usr/bin/nodejs" "/usr/bin/npm" "install" "lame" "--save"
+1430 error cwd /root/NotStu
+1431 error node -v v4.8.4
+1432 error npm -v 1.4.21
+1433 error code ELIFECYCLE
+1434 verbose exit [ 1, true ]
