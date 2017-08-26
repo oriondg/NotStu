@@ -1,3 +1,4 @@
+
 var checkError = require('check-error');
 var Discord = require('discord.io');
 var logger = require('winston');
@@ -30,7 +31,7 @@ var stockpile = '';
 var boundChannel = false;
 var playQueue = [];
 var apikey = youtube_apikey.apikey;
-
+var currentUserID = false;
 var dmName = 'Misterchainsaw';
 
 bot.on('warn', (m) => logger.info('[warn]', m));
@@ -54,6 +55,7 @@ bot.on('message', (user, userID, channelID, message, evt)  => {
 	logger.info(message);
 	logger.info("----------------");
 	if ( !m.content.startsWith(`${botMention} `) ) return;
+	currentUserID = userID;
 	if ( m.content.startsWith(`${botMention} i`)) {		
 		if ( !checkCommand(m, 'init')) return;
 		if ( boundChannel) return;
@@ -235,18 +237,22 @@ function play(video) {
 				logger.info(m);
 			}
 		}
-		logger.info(util.inspect(boundChannel, {showHidden: false, depth: 2}));
+		//logger.info(util.inspect(boundChannel, {showHidden: false, depth: 2}));
 		currentStream = video.getStream();
 		bot.getAudioContext({channelID: boundChannel.id, maxStreamSize: 50 * 1024}, (error, stream) => {
 			if ( error ) {
 				logger.error("Error setting up context.");
 				logger.error(error);
 			} else {
-				stream.pipe(stream, {end: false});
-				//boundChannel.sendMessage(`Playing ${video.prettyPrint()}`);
+				//setWorking(true, "Video over.");
+				//bot.setPresence( { game: video.title } );
+				//stream.pipe(currentStream, {end: false });
+				currentStream.pipe(stream, {end: false});
+				bot.sendMessage({to: currentUserID, message :`Playing ${video.prettyPrint()}`});
 				//bot.setStatus('online', video.title);
 			}
 		});
+		return;
 		currentStream.on('error', (err) => {
 			if ( err.code === 'ECONNRESET') {
 				boundChannel.sendMessage(`There was a network error during playback! The connection to YouTube may be unstable. Auto-skipping to the next video...`);
@@ -257,11 +263,6 @@ function play(video) {
 			playStopped();
 		});
 		
-		currentStream.on('end', () => setTimeout(playStopped, 8000));
-		connection.playRawStream(currentStream).then(intent => {
-			boundChannel.sendMessage(`Playing ${video.prettyPrint()}`);
-			bot.setStatus('online', video.title);
-		});
 	} else {
 		logger.info(util.inspect(bot, {showHidden: false, depth: 2}));
 		logger.error("Bot is not connected to voice.");
@@ -280,5 +281,17 @@ function fancyReply(m, message) {
 		stockpile += message + '\n';
 	} else {
 		bot.sendMessage({ to: m.author.id, message: message});
+	}
+}
+
+function setWorking(message) {
+	if ( !boundChannel ) return;
+	if ( !working ) {
+		bot.simulateTyping ( null );
+	} else {
+		bot.simulateTyping( boundChannel.id, (error, response) => {
+			bot.sendMessage({to: boundChannel.id, message: message});
+		});
+		
 	}
 }
